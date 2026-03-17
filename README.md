@@ -3,11 +3,13 @@
 _Harjoittelua_
 
 - [Laskarit](laskarit)
+  * _[viikko1.md](laskarit/viikko1.md)_
   * _[gitlog](laskarit/gitlog.txt)_
   * _[komentorivi](laskarit/komentorivi.txt)_
-  * _[viikko1.](laskarit/viikko1.md)_
+
 
 * Työtunnit: 3h
 
  **Ohjelmistotekniikka, harjoitustyö**
   - Ajattelin  tehdä visailupelin tai siivous to do Appin
+ 
