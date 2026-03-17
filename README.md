@@ -6,7 +6,7 @@ _Harjoittelua_
   * _[gitlog](laskarit/gitlog.txt)_
   * _[komentorivi](laskarit/komentorivi.txt)_
   * _[viikko1.](laskarit/viikko1.md)_
-  * _[README](ot-harjoittelutyo2026/README.md)_
+  * _[README](ot-harjoitustyo2026/README.md)_
 * Työtunnit: 3h
 
  **Ohjelmistotekniikka, harjoitustyö**
