@@ -6,4 +6,4 @@ _Harjoittelua_
 - Työtunnit: 3h
 
  **Ohjelmistotekniikka, harjoitustyö**
-- Aijon tehdä visailupelin tai siivous todo Apin
+- Ajattelin  tehdä visailupelin tai siivous to do Appin
