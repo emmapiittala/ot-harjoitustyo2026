@@ -10,6 +10,14 @@ _Harjoittelua_
 
 * Työtunnit: 3h
 
+ **Viikko 2**
+* [Laskarit Viikko 2](laskarit/viikko2)
+* _[Maksukortti](laskarit/viikko2/maksukortti/src)_
+* _[unicafe](laskarit/viikko2/unicafe)_
+
+* Työtunnit: 6h
+
+  
  **Ohjelmistotekniikka, harjoitustyö**
   - Ajattelin  tehdä visailupelin tai siivous to do Appin
  
