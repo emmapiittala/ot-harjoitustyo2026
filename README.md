@@ -13,9 +13,9 @@ _Harjoittelua_
 * [Laskarit](laskarit/viikko2)
 * _[Maksukortti](laskarit/viikko2/maksukortti/src)_
 * _[unicafe](laskarit/viikko2/unicafe)_
-* _[Testikattavuusraportti kuva](laskarit/viikko2/TTestikattavuusraportti_vko2_t9.png)_
+* _[Testikattavuusraportti-kuva](laskarit/viikko2/coverageraport.png)_
 * _[Projektin vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)_
 
  **Ohjelmistotekniikka, harjoitustyö**
-  - Ajattelin  tehdä visailupelin
+  - Ajattelin  tehdä smart10-tyylisen yksin pelattavan visailupelin.
  
