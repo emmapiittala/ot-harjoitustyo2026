@@ -1,5 +1,6 @@
+# Ohjelmistotekniikka 2026
 
-**Viikko 1** 
+## Viikko1
 _Harjoittelua_
 
 - [Laskarit](laskarit)
@@ -10,12 +11,15 @@ _Harjoittelua_
 
 * Työtunnit: 3h
 
- **Viikko 2**
-* [Laskarit Viikko 2](laskarit/viikko2)
+## Viikko2
+* [Laskarit] (laskarit/viikko2)
 * _[Maksukortti](laskarit/viikko2/maksukortti/src)_
 * _[unicafe](laskarit/viikko2/unicafe)_
+* _[Testikattavuusraportti kuva](laskarit/viikko2/TTestikattavuusraportti_vko2_t9.png)_
+* _[Projektin vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)_
 
-* Työtunnit: 6h
+
+* Työtunnit: pe 6h, ma 5h
 
   
  **Ohjelmistotekniikka, harjoitustyö**
