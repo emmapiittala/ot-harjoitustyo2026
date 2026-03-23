@@ -31,4 +31,3 @@ class TestMaksukortti(unittest.TestCase):
         saldo = self.maksukortti.ota_rahaa(10000)
         self.assertEqual(saldo, False)
         
-        
