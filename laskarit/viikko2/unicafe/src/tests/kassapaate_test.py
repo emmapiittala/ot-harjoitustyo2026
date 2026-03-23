@@ -123,3 +123,4 @@ class TestKassapaate(unittest.TestCase):
     def test_rahan_lataaminen_kasvattaa_kassaa(self):
         self.kassapaate.lataa_rahaa_kortille(self.maksukortti, 2500)
         self.assertEqual(self.kassapaate.kassassa_rahaa, 102500)
+        
