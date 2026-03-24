@@ -25,6 +25,7 @@ Sovelluksessa aukeaa kirjautumis näkymä -> kirjaudu sisään tai rekisteröidy
 
 ## Jatkokehitysideoita
 - Jatkossa voisi olla myös ylläpitäjä joka voisi keksiä uusia kategorioita/lisää kysymyksiä.
+- Moninpeli mahdollisuus.
 - Käyttäjät voisivat luoda Kahoot! - tyylisesti omia kysymyksiä
 - Timeri kauanko yhteen kysymykseen saisi vastata.
 - "Elämiä" - peli ei päättyisi ensimmäisestä väärästä vastauksesta, vaan esimerkiksi 3 elämää.
