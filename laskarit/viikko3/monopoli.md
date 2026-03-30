@@ -1,4 +1,3 @@
-
 ```mermaid
  classDiagram
     Monopolipeli "1" -- "2" Noppa
@@ -8,4 +7,24 @@
     Ruutu "1" -- "0..8" Pelinappula
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
+
+    Ruutu <|-- Aloitusruutu
+    Ruutu <|-- Vankila
+    Ruutu <|-- Sattuma
+    Ruutu <|-- Yhteismaa
+    Ruutu <|-- Asemat
+    Ruutu <|-- Laitoikset
+    Ruutu <|-- NormaalitKadut
+
+    NormaalitKadut "0..1" -- "1" Pelaaja
+
+    class NormaalitKadut {
+        omistaja: Pelaaja
+        talojenMaara: "0..4"
+        hotelliit: "0..1"
+    }
+    
+    
+
+
 ```
