@@ -8,7 +8,8 @@
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
     Ruutu "1" -- "1" Toiminto
-    Pelilauta "1" -- "1" Vankila
+    Monopolipeli "1" -- "1" Vankila
+    Monopolipeli "1" -- "1" Aloitusruutu
 
     Ruutu <|-- Aloitusruutu
     Ruutu <|-- Vankila
@@ -19,17 +20,17 @@
     Ruutu <|-- NormaalitKatu
 
     class Pelaaja {
-        +rahaa: int*
+        +raha: int
     }
 
-    class Sattuma {
-        Kortista tuleva toiminto
-    }
+    class Sattuma 
+        +Pelaaja "1" --> "*" Sattuma toiminto
+    
     
 
-    class Yhteismaa {
-        Kortista tuleva toiminto
-    }
+    class Yhteismaa
+        +Pelaaja "1" --> "*" Yhteismaa toiminto
+    
     
     NormaalitKatu "0..1" -- "1" Pelaaja
 
