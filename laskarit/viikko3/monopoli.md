@@ -23,13 +23,14 @@
         +raha: int
     }
 
-    class Sattuma 
-        +Pelaaja "1" --> "*" Sattuma toiminto
+    class Sattuma{
+
+    }
     
     
 
-    class Yhteismaa
-        +Pelaaja "1" --> "*" Yhteismaa toiminto
+    class Yhteismaa{
+        +Pelaaja "1" --> "*" Yhteismaa toiminto}
     
     
     NormaalitKatu "0..1" -- "1" Pelaaja
