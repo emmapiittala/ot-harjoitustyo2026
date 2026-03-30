@@ -10,7 +10,6 @@
     Ruutu "1" -- "1" Toiminto
     Monopolipeli "1" -- "1" Vankila
     Monopolipeli "1" -- "1" Aloitusruutu
-
     Ruutu <|-- Aloitusruutu
     Ruutu <|-- Vankila
     Ruutu <|-- Sattuma
@@ -19,26 +18,17 @@
     Ruutu <|-- Laitos
     Ruutu <|-- NormaalitKatu
 
-    class Pelaaja {
-        +raha: int
-    }
-
-    class Sattuma{
-
-    }
-    
-    
-
-    class Yhteismaa{
-        +Pelaaja "1" --> "*" Yhteismaa toiminto}
-    
-    
+    Sattuma "1" -- "*" Kortti
+    Yhteismaa "1" -- "*" Kortti
+    Kortti "1" -- "1" Toiminto    
     NormaalitKatu "0..1" -- "1" Pelaaja
 
     class NormaalitKatu {
-        +omistaja: Pelaaja
-        +talojenMaara: "0..4"
-        +hotellit: "0..1"
+        omisaja : Pelaaja
+        talojenMaara: int
+        hotellit : int
+        talojenMaara 0..4
+        hotellit 0..1
     }
     
     
