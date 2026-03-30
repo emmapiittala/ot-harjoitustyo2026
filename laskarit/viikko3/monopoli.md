@@ -9,10 +9,12 @@
 
     Ruutu "1" -- "1" Ruutu : seuraava
     Ruutu "1" -- "0..8" Pelinappula
-
+    Ruutu -- Toiminto
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
-
+    Sattuma -- Kortti
+    Yhteismaa -- Kortti
+    Kortti -- Toiminto
     Ruutu <|-- Aloitusruutu
     Ruutu <|-- Vankila
     Ruutu <|-- Sattuma
@@ -22,12 +24,35 @@
     Ruutu <|-- NormaalitKadut
 
     class Sattuma{
+        raha : int
+        kadut : int
+        talot : int
+        hotellit : int
+    }
+    class Sattuma{
 
-        +Toiminto
+        Toiminto
     }
 
         class Yhteismaa{
 
-        +Toiminto
+        Toiminto
     }
+
+        class NormaalitKadut{
+        omistaja : Pelaaja
+        talojenMaara : int(0-4)
+        hotellit : int(0-1)
+    }
+
+        class Toiminto{
+        Toiminto : +Jokaisella kortilla on toiminto
+        
+    }
+
+        class Pelinappula{
+        Pelaaja : +Pelinappulan heitto (luku 2-12)
+        
+    }
+
 ```
