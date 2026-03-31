@@ -16,6 +16,12 @@ _Harjoittelua_
 * _[Testikattavuusraportti-kuva](laskarit/viikko2/coverageraport.png)_
 * _[Projektin vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)_
 
- **Ohjelmistotekniikka, harjoitustyö**
+## Viikko3
+* [Laskarit](laskarit/viikko3)
+* _[Monopoli.md](laskarit/viikko3/monopoli.md)_
+* _[sekvenssikaavio.md](laskarit/viikko3/sekvenssikaavio.md)_
+
+  
+## **Ohjelmistotekniikka, harjoitustyö**
   - Ajattelin  tehdä smart10-tyylisen yksin pelattavan visailupelin.
  
