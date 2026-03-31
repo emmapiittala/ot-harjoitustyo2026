@@ -5,7 +5,7 @@
 ## Viikko3
 * _[Monopoli.md](laskarit/viikko3/monopoli.md)_
 * _[sekvenssikaavio.md](laskarit/viikko3/sekvenssikaavio.md)_
-
+(En ollut varma pitikö nämä tämän viikon laskariasiat poistaa myös) 
   
 ## **Ohjelmistotekniikka, harjoitustyö**
   - Ajattelin  tehdä smart10-tyylisen yksin pelattavan visailupelin.
