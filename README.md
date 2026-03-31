@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka 2026
 * [Työaikakirjanpito](Dokumentaatio/tyoaikakirjanpito.md)
-  
+ * [Changelog](Dokumentaatio/changelog.md)
 ## Viikko1
 _Harjoittelua_
 
