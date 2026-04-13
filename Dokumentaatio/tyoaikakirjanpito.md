@@ -1,9 +1,12 @@
 # Työajankirjanpito
-## Viikko 1
 
-## Viikko 2
-2 h - Määrittelyraportin kirjoitusta ja käyttöliittymän luonnostelua. 
 
-## Viikko 3
-- maanantai 30.3. 8h Projektin alustamista, yritin haukata liian isoo palaa ja kaikki meni pieleen joten poistin. 
-- tiistai 31.3. 3h Jatkoin siistimistä ja projektin turhat pois, tehty tests, coveragerc, invoke, changelog koitettu että toimii VMWare Horizonilla. 
+| Vko | Aika |Mitä tein? |
+|-----:|-----------|-----------|
+|     1.| 1h| Projektin miettimistä|
+|     2.|2h    |Määrittelyraportin kirjoitusta ja käyttöliittymän luonnostelua. |
+|     3.| 8h + 3h| Projektin aloitus, mutta seuraavana päivänä siistitty poistamalla turhat pois, tehty tests, coveragerc, invoke, changelog koitettu että toimii VMWare Horizonilla|
+|     4.| 5h +| Aloitettu projekti alusta vaihtamalla pygames->tkinteriin. Lisätty READMEHEN miten sovellusta voi käyttää.|
+|     5.| 0h| Mitäs tuli tehtyä|
+|     6.| 0h| Mitäs tuli tehtyä|
+|     7.| 0h| Mitäs tuli tehtyä|
