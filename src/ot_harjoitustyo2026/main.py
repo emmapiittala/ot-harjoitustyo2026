@@ -1,27 +1,15 @@
-import pygame
-import sys
-from ot_harjoitustyo2026.menu import Menu
-from ot_harjoitustyo2026.login import Login
-from ot_harjoitustyo2026.register import Register
-from ot_harjoitustyo2026.game import Game
-from ot_harjoitustyo2026.gameover import Gameover
+from tkinter import Tk
+from ot_harjoitustyo2026.ui import UI
+
 
 def main():
+    window = Tk()
+    window.title("Visailupeli")
+    window.geometry("800x800")
+    ui = UI(window)
+    ui.start()
 
-    state = "menu"
-    while True:
-        if state == "menu":
-            state = Menu().run()
-        elif state == "login":
-            state = Login().run()
-        elif state == "register":
-            state = Register().run()
-        elif state == "game":
-            state = Game().run()
-        elif state == "gameover":
-            state = Gameover().run()
-            
-            
+    window.mainloop()
 
 
 if __name__ == "__main__":

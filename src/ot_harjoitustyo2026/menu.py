@@ -1,27 +1,42 @@
-import pygame
-import sys
+from tkinter import ttk, constants
 
 
 class Menu:
-    def run(self):
-        pygame.init()
+    def __init__(self, root, handle_start):
+        self._root = root
+        self._handle_start = handle_start
+        self._frame = None
+        self._initialize()
 
-        screen = pygame.display.set_mode((640, 480))
-        font = pygame.font.SysFont("Arial", 30, bold=True)
+    def pack(self):
+        self._frame.pack(side=constants.TOP)
 
-        while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-                if event.type == pygame.MOUSEBUTTONDOWN:
-                    return "game"
-                
-            screen.fill((255, 255, 255))
-            text = font.render("Tähän tulee peli :)", True, (0,0,0))
-            screen.blit(text,(100,50))
-            start = font.render("Aloita peli", True, (0,0,0))
-            screen.blit(start, (100,100))
-            pygame.display.flip()
-            
+    def destroy(self):
+        self._frame.destroy()
+
+    def _initialize(self):
+        self._frame = ttk.Frame(master=self._root)
+
+        title = ttk.Label(
+            master=self._frame,
+            text="Tähän tulee peli"
+        )
+        rules = ttk.Label(
+            master=self._frame,
+            text="Tähän tule jotain sääntöjä jeejee"
+        )
+        start_button = ttk.Button(
+            master=self._frame,
+            text="Aloita Peli",
+            command=self._handle_start
+        )
+        
+        title.grid(row=0, column=0, pady=5)
+        rules.grid(row=2, column=0, pady=10)
+        start_button.grid(row=3, column=0)
+        self._frame.grid_rowconfigure(0, weight=1)
+        self._frame.grid_rowconfigure(1, weight=1)
+        self._frame.grid_columnconfigure(0, weight=1)
+        
+
         

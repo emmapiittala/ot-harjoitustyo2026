@@ -1,16 +1,12 @@
 import unittest
-
+from ot_harjoitustyo2026.menu import Menu
+from tkinter import Tk
 class TestMenu(unittest.TestCase):
-    def test_text(self):
-        text = ("Tähän tulee peli :)")
-        self.assertEqual(text, "Tähän tulee peli :)")
-        
-    def test_start(self):
-        start = ("Aloita peli")
-        self.assertEqual(start, "Aloita peli")
-        
-    ##def test_click(self):
-        ##keksi miten testataan
-        
-    ##def test_quit(self):
-    ##keksi
+    def setUp(self):
+        print("jee")
+
+    def test_menu_label(self):
+        print("jeejee")
+    
+    def test_menu_button(self):
+        print("eieiei")

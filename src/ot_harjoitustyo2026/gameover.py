@@ -1,18 +1,28 @@
-import pygame
+from tkinter import ttk, constants
 
-class Gameover:
-    def run(self):
-        pygame.init()
+class GameOver:
+    def __init__(self, root, handle_hello):
+        self._root = root
+        self._handle_hello = handle_hello
+        self._frame = None
 
-        screen = pygame.display.set_mode((640, 480))
-        font = pygame.font.SysFont("Arial", 30, bold=True)
+        self._initialize()
 
-        while True:
-            for tapahtuma in pygame.event.get():
-                if tapahtuma.type == pygame.QUIT:
-                    exit()
-            
-            screen.fill((0, 0, 0))
-            text = font.render("Tässä häviät pelin", True, (255,255,255))
-            screen.blit(text,(100,50))
-            pygame.display.flip()
+    def pack(self):
+        self._frame.pack(fill=constants.X)
+
+    def destroy(self):
+        self._frame.destroy()
+    
+    def _initialize(self):
+        self._frame = ttk.Frame(master=self._root)
+        label = ttk.Label(master=self._frame, text="Good bye!")
+
+        button = ttk.Button(
+            master=self._frame,
+            text="Say hello",
+            command=self._handle_hello
+        )
+
+        label.grid(row=0, column=0)
+        button.grid(row=1, column=0)
