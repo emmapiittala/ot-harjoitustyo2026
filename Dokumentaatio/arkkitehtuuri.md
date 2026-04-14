@@ -1,7 +1,7 @@
 ## Rakenne
 
 - Sovelluksessa on UI joka hoitaa näkymien hallinnan.
-- Menu joka näyttää aloitussivun
+- Menu joka näyttää aloitussivun(ehkä myös rekisteröitymisen/kirjautumisen)
 - Game vastaa pelilogiikasta ja toiminnallisuudesta.
 
 ![Arkkitehtuuri](arkkitehtuuri.png)
