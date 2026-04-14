@@ -1,17 +1,13 @@
-
-# Arkkitehtuurikuvaus
-
 ## Rakenne
+
 - Sovelluksessa on UI joka hoitaa näkymien hallinnan.
 - Menu joka näyttää aloitussivun
-- Game jossa peli on.  
-###
-```md
-## jee
+- Game jossa peli on.
+
 ```mermaid
 classDiagram
-    Game```
-
+    Game
+```
 ## Käyttöliittymä
 - Toteutettu Tkinterillä.
 
@@ -30,5 +26,3 @@ classDiagram
 - - Vastausten tarkistamista eikä kysymyksiä ole vielä toteutettu.
 ## Muut toiminnallisuudet
 - Pisteiden lasku jos jää aikaa
-
->>>>>>> dd6629ba87ff468b80e7cc7961ac7016a8645ac2
