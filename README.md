@@ -6,7 +6,7 @@
 ## **Ohjelmistotekniikka, harjoitustyö**
 Yksin pelattava visailupeli.
 
-# Huom. Python-versiosta
+## **Huom. Python-versiosta**
 Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kannssa saattaa ilmentyä ongelmia.
 
 ## **Miten sovellusta voi käyttää?**
