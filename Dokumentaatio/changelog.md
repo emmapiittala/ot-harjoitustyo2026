@@ -10,4 +10,3 @@ peliruutuun mihin tule kysymykset
     
 **14.4.2026**
   - Tehty testejä sekä napit mistä voi valita vastauksen(ei vielä toiminnallisuutta.
-  - 
