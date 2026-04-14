@@ -2,7 +2,7 @@
 
 - Sovelluksessa on UI joka hoitaa näkymien hallinnan.
 - Menu joka näyttää aloitussivun
-- Game jossa peli on ja sen logiikka.
+- Game vastaa pelilogiikasta ja toiminnallisuudesta.
 
 ![Arkkitehtuuri](arkkitehtuuri.png)
 
@@ -11,6 +11,7 @@
 
 ## Sovelluslogiikka
 - Sovelluksen käynnistäminen ja pelaaminen. Tällä on toiminnallisuus mistä pystyy siirtymään pelisivulle, mutta siellä ei vielä vasttausnapit toimi eikä tarkistusnappi. Sieltä pääsee myös aloitussivulle takaisin.
+- Pisteiden tarkistus ja pelilogiikka Gamesissa.
   
 ## Päätoiminnallisuudet
 - Pelaaminen. 
