@@ -4,10 +4,6 @@
 - Menu joka näyttää aloitussivun
 - Game jossa peli on.
 
-```mermaid
-classDiagram
-    Game
-```
 ## Käyttöliittymä
 - Toteutettu Tkinterillä.
 
