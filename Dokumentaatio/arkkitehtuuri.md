@@ -5,10 +5,12 @@
 - Sovelluksessa on UI joka hoitaa näkymien hallinnan.
 - Menu joka näyttää aloitussivun
 - Game jossa peli on.  
-
+###
+```md
+## jee
 ```mermaid
 classDiagram
-    Game
+    Game```
 
 ## Käyttöliittymä
 - Toteutettu Tkinterillä.
