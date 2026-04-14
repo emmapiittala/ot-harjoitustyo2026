@@ -9,7 +9,7 @@ class Menu:
         self._initialize()
 
     def pack(self):
-        self._frame.pack(side=constants.TOP)
+        self._frame.grid(row=5,column=5)
 
     def destroy(self):
         self._frame.destroy()
@@ -31,9 +31,9 @@ class Menu:
             command=self._handle_start
         )
 
-        title.grid(row=0, column=0, pady=5)
-        rules.grid(row=2, column=0, pady=10)
-        start_button.grid(row=3, column=0)
+        title.grid(columnspan=1, sticky=constants.NSEW, padx=5, pady=5)
+        rules.grid(columnspan=2, sticky=constants.NSEW, padx=5, pady=5)
+        start_button.grid(columnspan=3, sticky=constants.NSEW, padx=5, pady=5)
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)
