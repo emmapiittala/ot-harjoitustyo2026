@@ -3,6 +3,7 @@
  * [Changelog](Dokumentaatio/changelog.md)
  * [Vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)
   * [Käyttöliittymäluonnos](Dokumentaatio/kayttoliittymaluonnos.png)
+  * [Arkkitehtuurikuvaus](Dokumentaatio/arkkitehtuuri.md)
 ## **Ohjelmistotekniikka, harjoitustyö**
 Yksin pelattava visailupeli.
 
