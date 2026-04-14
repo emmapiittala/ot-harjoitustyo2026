@@ -2,9 +2,9 @@
 
 - Sovelluksessa on UI joka hoitaa näkymien hallinnan.
 - Menu joka näyttää aloitussivun
-- Game jossa peli on.
+- Game jossa peli on ja sen logiikka.
 
-  ![Arkkitehtuuri](Dokumentaatio/arkkitehtuuri.png)
+![Arkkitehtuuri](arkkitehtuuri.png)
 
 ## Käyttöliittymä
 - Toteutettu Tkinterillä.
