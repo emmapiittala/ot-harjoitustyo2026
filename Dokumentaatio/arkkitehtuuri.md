@@ -21,7 +21,7 @@
 ## Uuden käyttäjän luominen
 - - Katsotaan jos jää aikaa, näille on tehty kyllä omat register.py. 
 ## Pelin pelaaminen
-- - Käyttäjä pystyy siirtymään peliin aloitusvalikosta. Kun vastsa väärin, peli päättyy.
-- - Vastausten tarkistamista eikä kysymyksiä ole vielä toteutettu.
+- Käyttäjä pystyy siirtymään peliin aloitusvalikosta. Kun vastsa väärin, peli päättyy.
+- Vastausten tarkistamista eikä kysymyksiä ole vielä toteutettu.
 ## Muut toiminnallisuudet
 - Pisteiden lasku jos jää aikaa
