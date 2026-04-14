@@ -9,4 +9,4 @@ peliruutuun mihin tule kysymykset
 
     
 **14.4.2026**
-  - jooo
+  - Tehty testit ui sekä menu
