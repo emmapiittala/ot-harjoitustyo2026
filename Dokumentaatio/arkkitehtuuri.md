@@ -19,7 +19,7 @@
 ## Käyttäjän kirjautuminen
 - Katsotaan jos jää aikaa, näille on tehty kyllä omat login.py. 
 ## Uuden käyttäjän luominen
-- - Katsotaan jos jää aikaa, näille on tehty kyllä omat register.py. 
+-  Katsotaan jos jää aikaa, näille on tehty kyllä omat register.py. 
 ## Pelin pelaaminen
 - Käyttäjä pystyy siirtymään peliin aloitusvalikosta. Kun vastsa väärin, peli päättyy.
 - Vastausten tarkistamista eikä kysymyksiä ole vielä toteutettu.
