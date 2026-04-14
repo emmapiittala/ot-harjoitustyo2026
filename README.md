@@ -11,13 +11,10 @@ Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kannssa sa
 
 ## **Miten sovellusta voi käyttää?**
 
-- Kopioi projektin linkki oikealta ylhäältä painamalla vihreätä Code-nappia > SSH > ota linkki talteen Clonesta tai;
-```bash
-git@github.com:emmapiittala/ot-harjoitustyo2026.git
 ```
 - Avaa komentorivi ja kloonaa projekti:
 ```bash
-git clone git@github.com:emmapiittala/ot-harjoitustyo2026.git
+git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
 ```
 - Kun olet saanut kloonattua siirry:
  ```bash
