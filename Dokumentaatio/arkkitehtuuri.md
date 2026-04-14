@@ -4,6 +4,8 @@
 - Menu joka näyttää aloitussivun
 - Game jossa peli on.
 
+  ![Arkkitehtuuri](Dokumentaatio/arkkitehtuuri.png)
+
 ## Käyttöliittymä
 - Toteutettu Tkinterillä.
 
