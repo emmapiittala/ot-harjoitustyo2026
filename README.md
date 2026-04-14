@@ -11,7 +11,6 @@ Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kannssa sa
 
 ## **Miten sovellusta voi käyttää?**
 
-```
 - Avaa komentorivi ja kloonaa projekti:
 ```bash
 git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
