@@ -9,5 +9,5 @@ peliruutuun mihin tule kysymykset
 
     
 **14.4.2026**
-  - Tehty testit ui sekä menu. Napit mistä voi valita vastauksen(ei vielä toiminnallisuutta)
+  - Tehty testejä sekä napit mistä voi valita vastauksen(ei vielä toiminnallisuutta.
   - 
