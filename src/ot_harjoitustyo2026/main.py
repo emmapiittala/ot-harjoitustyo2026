@@ -1,5 +1,7 @@
 from tkinter import Tk
 from ot_harjoitustyo2026.ui import UI
+from ot_harjoitustyo2026.menu import Menu
+from ot_harjoitustyo2026.game import Game
 
 
 def main():

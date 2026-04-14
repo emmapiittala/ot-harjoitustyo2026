@@ -1,4 +1,6 @@
 from tkinter import ttk, constants
+
+
 class Game:
     def __init__(self, root, handle_quit):
         self._root = root
@@ -24,10 +26,9 @@ class Game:
             text="Lopeta peli",
             command=self._handle_quit
         )
-        
+
         title.grid(row=0, column=0, pady=5)
         quit_button.grid(row=1, column=0, pady=5)
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)
-        

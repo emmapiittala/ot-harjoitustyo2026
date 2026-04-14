@@ -30,13 +30,10 @@ class Menu:
             text="Aloita Peli",
             command=self._handle_start
         )
-        
+
         title.grid(row=0, column=0, pady=5)
         rules.grid(row=2, column=0, pady=10)
         start_button.grid(row=3, column=0)
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)
-        
-
-        
