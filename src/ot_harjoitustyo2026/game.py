@@ -1,6 +1,5 @@
-from tkinter import ttk, constants
-
-
+from tkinter import ttk
+from ot_harjoitustyo2026.quizzes import questions
 class Game:
     def __init__(self, root, handle_quit):
         self._root = root
@@ -16,20 +15,51 @@ class Game:
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
+        question = questions[0]
         title = ttk.Label(
             master=self._frame,
-            text="Tässä kysymys X"
+            text=question["question"]
         )
-        answer1 = ttk.Checkbutton(master=self._frame, text="answer1")
-        answer2 = ttk.Checkbutton(master=self._frame, text="answer2")
-        answer3 = ttk.Checkbutton(master=self._frame, text="answer3")
-        answer4 = ttk.Checkbutton(master=self._frame, text="answer4")
-        answer5 = ttk.Checkbutton(master=self._frame, text="answer5")
-        answer6 = ttk.Checkbutton(master=self._frame, text="answer6")
-        answer7 = ttk.Checkbutton(master=self._frame, text="answer7")
-        answer8 = ttk.Checkbutton(master=self._frame, text="answer8")
-        answer9 = ttk.Checkbutton(master=self._frame, text="answer9")
-        answer10 = ttk.Checkbutton(master=self._frame, text="answer10")
+        answer1 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][0]
+        )
+        answer2 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][1]
+        )
+        answer3 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][2]
+        )
+        answer4 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][3]
+        )
+        answer5 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][4]
+        )
+        answer6 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][5]
+        )
+        answer7 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][6]
+        )
+        answer8 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][7]
+        )
+        answer9 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][8]
+        )
+        answer10 = ttk.Checkbutton(
+            master=self._frame,
+            text=question["choices"][9]
+        )
         
         check_button = ttk.Button(
             master=self._frame,
