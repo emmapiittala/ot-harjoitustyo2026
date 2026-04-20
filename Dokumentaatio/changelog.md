@@ -10,3 +10,10 @@ peliruutuun mihin tule kysymykset
     
 **14.4.2026**
   - Tehty testejä sekä napit mistä voi valita vastauksen(ei vielä toiminnallisuutta.
+
+**14.4.2026**
+  - Projektiin lisätty quizzes.py mistä haetaan kysymykset, vastausvaihtoehdot ja oikeat vastaukset, jottei game.py menisi aivan tukkoon.
+  - Game.py lisätty kysymys näkyviin sekä checkbuttoneita muokattu niin että niissä näkyvät oikeat vastausvaihdot.
+    
+
+
