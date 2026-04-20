@@ -60,7 +60,6 @@ class Game:
             master=self._frame,
             text=question["choices"][9]
         )
-        
         check_button = ttk.Button(
             master=self._frame,
             text="Tarkista",
@@ -72,7 +71,6 @@ class Game:
             text="Palaa etusivulle",
             command=self._handle_quit
         )
-        
         title.grid(row=0, column=0, pady=5, sticky="n")
         answer1.grid(row=1,column=0)
         answer2.grid(row=1, column=1)
@@ -89,3 +87,4 @@ class Game:
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)
+        
