@@ -14,8 +14,31 @@
 - Pisteiden tarkistus ja pelilogiikka Gamesissa.
   
 ## Päätoiminnallisuudet
+```mermaid
+ classDiagram
+      Game"1" --> "*" Questions
+      Game "1"-->"1" Player
+      class Game{
+          game_start
+          question
+          game_over
+          
+      }
+      class Player{
+          username
+          password
+          score
+      }
+      class Questions{
+          question
+          choices
+          correct_answers
+      }
+```
+![Sekvenssikaavio](sekvenssikaavio.png)
 - Pelaaminen. 
-- Ajattelin aluksi tehdä kirjautumisen/rekisteröitymisen, mutta voi olla että aika ei riitä. 
+- Kirjautuminen ja rekisteröityminen
+- pisteet
 ## Käyttäjän kirjautuminen
 - Katsotaan jos jää aikaa, näille on tehty kyllä omat login.py. 
 ## Uuden käyttäjän luominen
