@@ -16,10 +16,10 @@ Sovelluksessa aukeaa kirjautumis näkymä -> kirjaudu sisään tai rekisteröidy
 - Käyttäjä pystyy rekisteröitymään tai kirjautua sisään peliin. 
 
 ### Kirjautumisen jälkeen
-- Käyttäjä pystyy lukea pelin ohjeet.
-- Käynnistää pelin.
-- Pelata.
-- Käyttäjä voi valita haluaako pelata uudestaan.
+- Käyttäjä pystyy lukea pelin ohjeet. **Tehty**
+- Käynnistää pelin. **Tehty** 
+- Pelata. **Puoliksi tehty,harjoituskysymykset**
+- Käyttäjä voi valita haluaako pelata uudestaan.**Tehty**
 - Käyttäjä pystyy kirjautua ulos.
 - Käyttäjä näkee pistetilastonsa. 
 
