@@ -4,6 +4,7 @@
  * [Vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)
   * [Käyttöliittymäluonnos](Dokumentaatio/kayttoliittymaluonnos.png)
   * [Arkkitehtuurikuvaus](Dokumentaatio/arkkitehtuuri.md)
+  * [Github release](https://github.com/emmapiittala/ot-harjoitustyo2026/releases/tag/Viikko5)
 ## **Ohjelmistotekniikka, harjoitustyö**
 Yksin pelattava visailupeli.
 
