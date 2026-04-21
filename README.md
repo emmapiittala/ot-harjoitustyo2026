@@ -36,3 +36,8 @@ git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
 ```bash
   poetry run invoke coverage-report
   ```
+
+- Pylint-tarkistus:
+ ```bash
+  poetry run pylint src
+ ```
