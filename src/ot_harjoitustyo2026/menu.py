@@ -1,4 +1,4 @@
-from tkinter import ttk, constants
+from tkinter import ttk
 
 
 class Menu:
@@ -19,11 +19,22 @@ class Menu:
 
         title = ttk.Label(
             master=self._frame,
-            text="Tähän tulee peli"
+            text="Visailupeli",
+            anchor="center"
         )
         rules = ttk.Label(
             master=self._frame,
-            text="Tähän tule jotain sääntöjä jeejee"
+            text=("Säännöt:\n"
+            "- Tässä pelissä on tällä hetkellä 3 kysymystä.\n"
+            "- Raksi ruudut mitkä koet oikeiksi vastauksiksi.\n"
+            "- Kun olet valinnut halutut vastaukset paina tarkista.\n"
+            "- Jos vastaus oli väärin, peli päättyy. Voit valita\n"
+            " haluatko aloittaa uuden pelin vai mennä etusivulle.\n"
+            "- Painamalla tarkista- näppäintä ilman yhtään klikattua vastausta, häviät pelin.\n"
+            "- Jos vastasit oikein, näkyviisi tulee nappi millä pääset seuraavaan kysymykseen.\n"
+
+        ),
+            anchor="center"
         )
         start_button = ttk.Button(
             master=self._frame,
@@ -31,9 +42,9 @@ class Menu:
             command=self._handle_start
         )
 
-        title.grid(columnspan=1, sticky=constants.NSEW, padx=5, pady=5)
-        rules.grid(columnspan=2, sticky=constants.NSEW, padx=5, pady=5)
-        start_button.grid(columnspan=3, sticky=constants.NSEW, padx=5, pady=5)
+        title.grid(row=0, column=0, pady=10)
+        rules.grid(row=1, column=0, pady=10)
+        start_button.grid(row=2, column=0, pady=10)
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)

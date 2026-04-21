@@ -4,7 +4,7 @@ from ot_harjoitustyo2026.ui import UI
 def main():
     window = Tk()
     window.title("Visailupeli")
-    window.geometry("600x600")
+    window.geometry("800x400")
     ui = UI(window)
     ui.start()
 
