@@ -9,7 +9,7 @@ class Menu:
         self._initialize()
 
     def pack(self):
-        self._frame.grid(row=5,column=5)
+        self._frame.place(relx=0.5, rely=0.5, anchor="center")
 
     def destroy(self):
         self._frame.destroy()

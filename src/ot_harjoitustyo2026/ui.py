@@ -1,7 +1,6 @@
 from ot_harjoitustyo2026.menu import Menu
 from ot_harjoitustyo2026.game import Game
 
-
 class UI:
     def __init__(self, root):
         self._root = root
