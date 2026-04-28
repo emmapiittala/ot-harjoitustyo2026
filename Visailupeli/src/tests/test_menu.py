@@ -17,15 +17,15 @@ class TestMenu(unittest.TestCase):
 
     def test_check_answer_return_correct_answer(self):
         result = self.logic.check_answer(["Kyllä"])
-        self.assertTrue(True)
+        self.assertTrue(result)
 
     def test_check_anwer_is_not_correct(self):
         result = self.logic.check_answer(["Ei"])
-        self.assertFalse(False)
+        self.assertFalse(result)
 
     def test_show_question(self):
         result = self.logic.get_question()
-        self.assertTrue(True)
+        self.assertTrue(result)
 
 
     

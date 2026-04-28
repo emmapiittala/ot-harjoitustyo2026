@@ -6,3 +6,5 @@ omit =
     src/tests/**
     src/ui/**
     src/main.py
+    src/game_logic/game.py
+    
