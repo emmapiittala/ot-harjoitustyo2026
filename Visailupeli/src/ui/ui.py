@@ -1,5 +1,5 @@
 from ui.menu import Menu
-from game_logic.game import Game
+from ui.game import Game
 
 class UI:
     def __init__(self, root):
