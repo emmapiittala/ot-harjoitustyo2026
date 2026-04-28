@@ -22,4 +22,10 @@ peliruutuun mihin tule kysymykset
     - lisätty muutama testikysymys.
     
 
-
+**28.4.2026**
+- Muutettu projektin kansiorakennnetta selkeämmäksi.
+- Korjattu importteja uuden rakenteen takia. 
+- Pylintin konfigurointia. Toivottavast toimii nytten.
+- Korjattu testejä.
+- 
+  
