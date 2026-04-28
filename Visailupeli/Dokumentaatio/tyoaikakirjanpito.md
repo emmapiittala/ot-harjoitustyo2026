@@ -10,4 +10,4 @@
 |     5.| 15h| Vastausvaihtoehtojen toiminnallisuus, uusia nappeja, quizzes.py luotu mihin tulee kysymykset, logiikkaa siirretty game.py -> logic.py |
 |     6.| 3h| Muutettu pakkausrakenneta, importteja, pylintiä toivottavasti onnistuneesti konfiguroitu. Jätetty ui testien ulkopuolelle|
 |     7.| 0h| Mitäs tuli tehtyä|
-
+|     yht. | 44h| |
