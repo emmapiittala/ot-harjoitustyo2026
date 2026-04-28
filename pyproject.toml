@@ -25,3 +25,6 @@ dev = [
 ]
 [tool.pytest.ini_options]
 testpaths = ["src"]
+
+[tool.pylint]
+rcfile = ".pylintrc"
