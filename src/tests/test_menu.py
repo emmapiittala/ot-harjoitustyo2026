@@ -1,6 +1,6 @@
 import unittest
 from tkinter import Tk
-from ot_harjoitustyo2026.logic import GameLogic
+from ot_harjoitustyo2026.game_logic.logic import GameLogic
 
 
 class TestMenu(unittest.TestCase):
