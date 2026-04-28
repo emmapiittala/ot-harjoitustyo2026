@@ -1,9 +1,9 @@
 # Ohjelmistotekniikka 2026
-* [Työaikakirjanpito](Dokumentaatio/tyoaikakirjanpito.md)
- * [Changelog](Dokumentaatio/changelog.md)
- * [Vaatimusmäärittely](Dokumentaatio/vaatimusmaarittely.md)
-  * [Käyttöliittymäluonnos](Dokumentaatio/kayttoliittymaluonnos.png)
-  * [Arkkitehtuurikuvaus](Dokumentaatio/arkkitehtuuri.md)
+* [Työaikakirjanpito](Visailupeli/Dokumentaatio/tyoaikakirjanpito.md)
+ * [Changelog](Visailupeli/Dokumentaatio/changelog.md)
+ * [Vaatimusmäärittely](Visailupeli/Dokumentaatio/vaatimusmaarittely.md)
+  * [Käyttöliittymäluonnos](Visailupeli/Dokumentaatio/kayttoliittymaluonnos.png)
+  * [Arkkitehtuurikuvaus](Visailupeli/Dokumentaatio/arkkitehtuuri.md)
   * [Github release](https://github.com/emmapiittala/ot-harjoitustyo2026/releases/tag/Viikko5)
 ## **Ohjelmistotekniikka, harjoitustyö**
 Yksin pelattava visailupeli.
