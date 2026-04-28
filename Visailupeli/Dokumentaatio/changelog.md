@@ -26,6 +26,7 @@ peliruutuun mihin tule kysymykset
 - Muutettu projektin kansiorakennnetta selkeämmäksi.
 - Korjattu importteja uuden rakenteen takia. 
 - Pylintin konfigurointia. Toivottavast toimii nytten.
-- Korjattu testejä.
-- 
+- Korjattu testejä sekä lisätty uusia testejä.
+- Siivottu koodia ja lisätty docstringit.
+  
   
