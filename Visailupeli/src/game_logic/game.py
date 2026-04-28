@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from ot_harjoitustyo2026.game_logic.quizzes import questions
-from ot_harjoitustyo2026.game_logic.logic import GameLogic
-from ot_harjoitustyo2026.ui.gameover import GameOver
+from game_logic.quizzes import questions
+from game_logic.logic import GameLogic
+from ui.gameover import GameOver
 
 class Game:
     def __init__(self, root, handle_quit):

@@ -1,5 +1,5 @@
-from ot_harjoitustyo2026.ui.menu import Menu
-from ot_harjoitustyo2026.game_logic.game import Game
+from ui.menu import Menu
+from game_logic.game import Game
 
 class UI:
     def __init__(self, root):
