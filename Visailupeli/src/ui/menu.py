@@ -1,20 +1,29 @@
+"""Main menu view"""
 from tkinter import ttk
 
-
 class Menu:
+    """Show the main menu and game rules
+    Attributes:
+    _root: Application window.
+    _handle_start: Callbaxk to start the game.
+    _frame: Main frame for the view."""
     def __init__(self, root, handle_start):
+        """Intialize the menu view."""
         self._root = root
         self._handle_start = handle_start
         self._frame = None
         self._initialize()
 
     def pack(self):
+        """Display the view center"""
         self._frame.place(relx=0.5, rely=0.5, anchor="center")
 
     def destroy(self):
+        """Destroy the curren UI window"""
         self._frame.destroy()
 
     def _initialize(self):
+        """Create UI and make labels, buttons and gamerules"""
         self._frame = ttk.Frame(master=self._root)
 
         title = ttk.Label(

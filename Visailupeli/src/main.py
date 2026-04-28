@@ -1,7 +1,9 @@
+"""Start the application"""
 from tkinter import Tk
 from ui.ui import UI
 
 def main():
+    """"Create main window"""
     window = Tk()
     window.title("Visailupeli")
     window.geometry("800x400")

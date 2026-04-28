@@ -1,4 +1,8 @@
-
+"""Quiz questions list
+Attribute: 
+question: questions test.add()
+choices: list of possible answers
+correct_answers: List of correct answers"""
 questions = [
     {"question": "Toimiiko kysymys?(Kyllä, joo ja oikein toimivat)",
      "choices": ["Kyllä","Ei,","Ehkä,","joo",

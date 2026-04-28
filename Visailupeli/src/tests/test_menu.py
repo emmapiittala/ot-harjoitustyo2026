@@ -1,10 +1,18 @@
+"""Test GameLogic class"""
 import unittest
 from tkinter import Tk
 from game_logic.logic import GameLogic
 
 
 class TestMenu(unittest.TestCase):
+    """Tests for game logic."""
     def setUp(self):
+        """Test data
+        Attribute: 
+        question: questions test.add()
+        choices: list of possible answers
+        correct_answers: List of correct answers"""
+        
         questions = [
         {"question": "Toimiiko kysymys?(Kyllä, joo ja oikein toimivat)",
         "choices": ["Kyllä","Ei,","Ehkä,","joo",
@@ -25,26 +33,33 @@ class TestMenu(unittest.TestCase):
 
 
     def test_check_answer_return_correct_answer(self):
+        """Test corrent answer returns True."""
         result = self.logic.check_answer(["Kyllä"])
         self.assertTrue(result)
 
     def test_check_answer_is_not_correct(self):
+        """Test wrong answer return False."""
         result = self.logic.check_answer(["Ei"])
         self.assertFalse(result)
 
     def test_show_question(self):
+        """Test getting current question."""
         result = self.logic.get_question()
         self.assertTrue(result)
 
     def test_no_answer(self):
+        """Test empty answer return False."""
         result = self.logic.check_answer([])
         self.assertFalse(result)
-        
+
     def test_next_question(self):
+        """Test moving to next question."""
         result = self.logic.current_question
         self.logic.next_question()
         self.assertEqual(self.logic.current_question, result + 1)
-        
+
     def test_last_question(self):
+        """Test no more questions."""
         self.logic.current_question = len(self.logic.questions) - 1
         self.assertFalse(self.logic.check_questions())
+        

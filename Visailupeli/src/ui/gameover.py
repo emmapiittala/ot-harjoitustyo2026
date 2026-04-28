@@ -1,7 +1,12 @@
+"""Game over window"""
 from tkinter import ttk
 
-
 class GameOver:
+    """Show when the game ends
+    Attributes:
+    _root: Application window.
+    _handle_start: Callback to return to menu. 
+    _handle_quit: Callback to back menu"""
     def __init__(self, root, handle_start,handle_quit):
         self._root = root
         self._handle_start = handle_start
@@ -10,20 +15,25 @@ class GameOver:
         self._initialize()
 
     def pack(self):
+        """Display the view center"""
         self._frame.place(relx=0.5, rely=0.5, anchor="center")
 
     def destroy(self):
+        """Destroy the current UI frame"""
         self._frame.destroy()
 
     def start_game(self):
+        """Close the current view and start new game"""
         self.destroy()
         self._handle_start()
 
     def quit_game(self):
+        """Close the current view and return to menu"""
         self.destroy()
         self._handle_quit()
 
     def _initialize(self):
+        """Create UI and make labels and buttons"""
         self._frame = ttk.Frame(master=self._root)
 
         title = ttk.Label(

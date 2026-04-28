@@ -1,3 +1,4 @@
+"""Game window"""
 import tkinter as tk
 from tkinter import ttk
 from game_logic.quizzes import questions
@@ -5,7 +6,17 @@ from game_logic.logic import GameLogic
 from ui.gameover import GameOver
 
 class Game:
+    """Show the game screen
+    Attributes:
+    _root: Application window.
+    _handle_quit: Callback to the main menu.
+    _frame: Main frame for the view.
+    title: Question tlabel widget.
+    logic: Gamelogic handler.
+    answer_vars: Variables for selected answers.
+    answers: Answers option widgets."""
     def __init__(self, root, handle_quit):
+        """Intialize the game viiew"""
         self._root = root
         self._handle_quit = handle_quit
         self._frame = ttk.Frame(master=self._root)
@@ -16,12 +27,15 @@ class Game:
         self._initialize()
 
     def pack(self):
+        """Display the view center"""
         self._frame.grid(row=0, column=0)
 
     def destroy(self):
+        """Destroy the current UI frame"""
         self._frame.destroy()
 
     def create_question(self):
+        """Create the question and aswer options"""
         question = self.logic.get_question()
         self.title = ttk.Label(
             master=self._frame,
@@ -42,6 +56,7 @@ class Game:
             self.answer_vars.append(variable)
 
     def check_answers(self):
+        """Check slected answers, validate them using game logic, and update view"""
         self.check_button.config(state="disabled")
         selected_answers = self.logic.get_selected_answers(self.answer_vars)
 
@@ -51,6 +66,7 @@ class Game:
             self.show_quit()
 
     def show_next_question(self):
+        """Show a button to the next question."""
         next_button = ttk.Button(
                 master=self._frame,
                 text="Seuraava kysymys",
@@ -59,6 +75,7 @@ class Game:
         next_button.grid(row=5, column =0, pady=5)
 
     def next_question(self):
+        """Move to the next question and refresh the view."""
         self.logic.next_question()
         widgets = self._frame.winfo_children()
 
@@ -68,6 +85,7 @@ class Game:
         self._initialize()
 
     def restart_game(self):
+        """Restart game."""
         self.destroy()
         game = Game(
             self._root,
@@ -76,6 +94,7 @@ class Game:
         game.pack()
 
     def show_quit(self):
+        """Show the game over view"""
         self.destroy()
         game_over = GameOver(
             self._root,
@@ -85,6 +104,7 @@ class Game:
         game_over.pack()
 
     def _initialize(self):
+        """Create question elements, buttons and build the UI layout."""
         self.create_question()
         self.check_button = ttk.Button(
             master=self._frame,
