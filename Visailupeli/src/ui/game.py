@@ -25,6 +25,7 @@ class Game:
         self.answer_vars = []
         self.answers = []
         self._initialize()
+        
 
     def pack(self):
         """Display the view center"""
@@ -56,11 +57,12 @@ class Game:
             self.answer_vars.append(variable)
 
     def check_answers(self):
-        """Check slected answers, validate them using game logic, and update view"""
+        """Check slected answers and update score and shows next question if answers are correct"""
         self.check_button.config(state="disabled")
         selected_answers = self.logic.get_selected_answers(self.answer_vars)
 
         if self.logic.check_answer(selected_answers):
+            self.score_label.config(text = "Pisteet: " + str(self.logic.score))
             self.show_next_question()
         else:
             self.show_quit()
@@ -99,12 +101,13 @@ class Game:
         game_over = GameOver(
             self._root,
             self.restart_game,
-            self._handle_quit
+            self._handle_quit,
+            self.logic.score
         )
         game_over.pack()
 
     def _initialize(self):
-        """Create question elements, buttons and build the UI layout."""
+        """Create question elements, buttons,score and build the UI layout."""
         self.create_question()
         self.check_button = ttk.Button(
             master=self._frame,
@@ -123,7 +126,12 @@ class Game:
             column = i % 5
             answer.grid(row = row, column = column, padx = 20, pady = 10, sticky = "w")
             i += 1
-
+        
+        self.score_label = ttk.Label(
+            master = self._frame,
+            text = "Pisteet: " + str(self.logic.score)
+        )
+        self.score_label.grid(row=6, column = 0)
         self.check_button.grid(row=3, column=0, pady=5)
         quit_button.grid(row=4, column=0, pady=5)
         self._frame.grid_rowconfigure(0, weight=1)

@@ -7,22 +7,30 @@ class GameLogic:
         current_question: Index of current question"""
         self.questions = questions
         self.current_question = 0
+        self.points = 0
+        self.score = 0
+        
 
     def get_question(self):
         """Return current question"""
         return self.questions[self.current_question]
 
     def check_answer(self, selected_answers):
-        """Check if the selected answer is correct"""
+        """Check if the selected answer is correct and update score """
         question = self.get_question()
         correct_answers = question["correct_answers"]
-
+        points = 0
+        
         if len(selected_answers) == 0:
             return False
 
         for answer in selected_answers:
             if answer not in correct_answers:
                 return False
+            else: 
+                points += 1
+                
+        self.score += points
         return True
 
     def next_question(self):
@@ -46,3 +54,4 @@ class GameLogic:
             i += 1
 
         return selected_answers
+

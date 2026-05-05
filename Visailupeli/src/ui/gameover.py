@@ -7,11 +7,12 @@ class GameOver:
     _root: Application window.
     _handle_start: Callback to return to menu. 
     _handle_quit: Callback to back menu"""
-    def __init__(self, root, handle_start,handle_quit):
+    def __init__(self, root, handle_start, handle_quit, score):
         self._root = root
         self._handle_start = handle_start
         self._handle_quit = handle_quit
         self._frame = None
+        self._score = score
         self._initialize()
 
     def pack(self):
@@ -54,7 +55,11 @@ class GameOver:
             text="Palaa etusiivulle",
             command=self.quit_game
         )
-
+        score = ttk.Label(
+            master = self._frame,
+            text = "Pisteet: " + str(self._score)
+        )
+        score.grid(row=1, column=0, columnspan=5, pady=10)
         title.grid(row=0, column=0, columnspan=5, pady=10)
         rules.grid(row=3, column=0, columnspan=5, pady=10)
         start_button.grid(row=4, column=0, columnspan=5, pady=10)
@@ -62,3 +67,4 @@ class GameOver:
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)
+        
