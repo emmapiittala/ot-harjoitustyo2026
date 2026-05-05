@@ -9,5 +9,5 @@
 |     4.| 12h| Aloitettu projekti alusta vaihtamalla pygames->tkinteriin. Lisätty READMEHEN miten sovellusta voi käyttää. Tehty vastausnapit, tarkistusnapit, mutta ei vielä toimintaa. Arkkitehtuuri.md tehty|
 |     5.| 15h| Vastausvaihtoehtojen toiminnallisuus, uusia nappeja, quizzes.py luotu mihin tulee kysymykset, logiikkaa siirretty game.py -> logic.py |
 |     6.| 7h| Muutettu pakkausrakenneta, importteja, pylintiä toivottavasti onnistuneesti konfiguroitu. Jätetty ui testien ulkopuolelle. Lisätty lisää testejä sekä tehty docstringejä.|
-|     7.| 0h| Mitäs tuli tehtyä|
-|     yht. | 48h| |
+|     7.| 4h| Lisätty pisteiden tallennus JSON, Peli näyttää pisteet peliä pelatessa sekä gameover ruudussa näkyy kierroksen pisteet sekä kaikki pisteet|
+|     yht. | 52h| |
