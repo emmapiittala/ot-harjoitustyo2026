@@ -4,7 +4,7 @@ from tkinter import ttk
 from game_logic.quizzes import questions
 from game_logic.logic import GameLogic
 from ui.gameover import GameOver
-
+from scores.scores import save_scores
 class Game:
     """Show the game screen
     Attributes:
@@ -97,6 +97,7 @@ class Game:
 
     def show_quit(self):
         """Show the game over view"""
+        save_scores(self.logic.score)
         self.destroy()
         game_over = GameOver(
             self._root,

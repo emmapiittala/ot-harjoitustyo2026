@@ -1,5 +1,6 @@
 """Game over window"""
 from tkinter import ttk
+from scores.scores import get_scores
 
 class GameOver:
     """Show when the game ends
@@ -55,11 +56,18 @@ class GameOver:
             text="Palaa etusiivulle",
             command=self.quit_game
         )
+        
         score = ttk.Label(
             master = self._frame,
-            text = "Pisteet: " + str(self._score)
+            text = "Tämän kierroksen pisteet: " + str(self._score)
+        )
+        scores_all = get_scores()
+        score_all = ttk.Label(
+            master = self._frame,
+            text = "Kaikki pisteet: " + str(scores_all)
         )
         score.grid(row=1, column=0, columnspan=5, pady=10)
+        score_all.grid(row=2, column=0, columnspan=5, pady=10)
         title.grid(row=0, column=0, columnspan=5, pady=10)
         rules.grid(row=3, column=0, columnspan=5, pady=10)
         start_button.grid(row=4, column=0, columnspan=5, pady=10)

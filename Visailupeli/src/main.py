@@ -2,6 +2,7 @@
 from tkinter import Tk
 from ui.ui import UI
 
+
 def main():
     """"Create main window"""
     window = Tk()
@@ -12,6 +13,6 @@ def main():
 
     window.mainloop()
 
-
 if __name__ == "__main__":
     main()
+
