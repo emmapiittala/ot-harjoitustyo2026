@@ -21,7 +21,7 @@ Sovelluksessa aukeaa kirjautumis näkymä -> kirjaudu sisään tai rekisteröidy
 - Pelata. **Puoliksi tehty,harjoituskysymykset**
 - Käyttäjä voi valita haluaako pelata uudestaan.**Tehty**
 - Käyttäjä pystyy kirjautua ulos.
-- Käyttäjä näkee pistetilastonsa. 
+- Käyttäjä näkee pistetilastonsa. **Tehty**
 
 ## Jatkokehitysideoita
 - Jatkossa voisi olla myös ylläpitäjä joka voisi keksiä uusia kategorioita/lisää kysymyksiä.
