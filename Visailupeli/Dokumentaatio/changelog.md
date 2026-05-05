@@ -29,5 +29,10 @@ peliruutuun mihin tule kysymykset
 - Pylintin konfigurointia. Toivottavast toimii nytten.
 - Korjattu testejä sekä lisätty uusia testejä.
 - Siivottu koodia ja lisätty docstringit.
+
+**5.5.2026**
+- Peliin lisätty pisteet mitä pystyy seuraamaan peliä pelatessa.
+- Gameoverissa näkyy kierroksen pisteet sekä kaikki aikaisempien pelien pisteet.
+- Pisteet tallennetaan JSON-tiedostoon.
   
   
