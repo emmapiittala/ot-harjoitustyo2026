@@ -1,15 +1,14 @@
 """Game logic"""
 class GameLogic:
-    def __init__(self, questions):
-        """Handle questions logic and aswers
+    """Handle questions logic and aswers
         Attributes: 
         questions: List of questions
-        current_question: Index of current question"""
+        current_question: Index of current question
+        score = player score"""
+    def __init__(self, questions):
         self.questions = questions
         self.current_question = 0
-        self.points = 0
         self.score = 0
-        
 
     def get_question(self):
         """Return current question"""
@@ -20,16 +19,15 @@ class GameLogic:
         question = self.get_question()
         correct_answers = question["correct_answers"]
         points = 0
-        
+
         if len(selected_answers) == 0:
             return False
 
         for answer in selected_answers:
             if answer not in correct_answers:
                 return False
-            else: 
-                points += 1
-                
+            points += 1
+
         self.score += points
         return True
 
@@ -54,4 +52,3 @@ class GameLogic:
             i += 1
 
         return selected_answers
-

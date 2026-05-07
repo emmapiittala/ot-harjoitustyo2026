@@ -1,6 +1,5 @@
 """Test GameLogic class"""
 import unittest
-from tkinter import Tk
 from game_logic.logic import GameLogic
 
 
@@ -12,7 +11,7 @@ class TestMenu(unittest.TestCase):
         question: questions test.add()
         choices: list of possible answers
         correct_answers: List of correct answers"""
-        
+
         questions = [
         {"question": "Toimiiko kysymys?(Kyllä, joo ja oikein toimivat)",
         "choices": ["Kyllä","Ei,","Ehkä,","joo",
@@ -62,4 +61,3 @@ class TestMenu(unittest.TestCase):
         """Test no more questions."""
         self.logic.current_question = len(self.logic.questions) - 1
         self.assertFalse(self.logic.check_questions())
-        

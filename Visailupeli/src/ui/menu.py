@@ -23,23 +23,23 @@ class Menu:
     def destroy(self):
         """Destroy the curren UI window"""
         self._frame.destroy()
-        
+
     def save_username(self):
         """Save username and then show start button"""
         username = self.username_box.get()
-        
+
         if not username.strip():
             self.message.config(
                 text="Anna nimimerkki"
             )
-            
-            return 
+
+            return
         self.username = username
         self.message.config(
             text=f"Tervetuloa pelaamaan {username}!"
         )
         self.start_button.grid(row=6, column=0, pady=10)
-    
+
     def start_game(self):
         """Start game when gets username"""
         self._handle_start(self.username)
