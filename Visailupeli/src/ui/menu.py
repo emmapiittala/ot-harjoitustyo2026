@@ -12,6 +12,7 @@ class Menu:
         self._root = root
         self._handle_start = handle_start
         self._frame = None
+        self.username = ""
         self._initialize()
 
     def pack(self):
@@ -21,6 +22,22 @@ class Menu:
     def destroy(self):
         """Destroy the curren UI window"""
         self._frame.destroy()
+        
+    def save_username(self):
+        username = self.username_box.get()
+        
+        if not username.strip():
+            self.message.config(
+                text="Anna nimimerkki"
+            )
+            
+            return 
+        self.username = username
+        self.message.config(
+            text=f"Tervetuloa pelaamaan {username}!"
+        )
+        self.start_button.grid(row=6, column=0, pady=10)
+        
 
     def _initialize(self):
         """Create UI and make labels, buttons and gamerules"""
@@ -45,15 +62,34 @@ class Menu:
         ),
             anchor="center"
         )
-        start_button = ttk.Button(
+        username = ttk.Label(
+            master=self._frame,
+            text="Nimimerkki:"
+        )
+        self.username_box = ttk.Entry(
+            master=self._frame,
+        )
+        username_save_button = ttk.Button(
+            master=self._frame,
+            text="Tallenna",
+            command=self.save_username
+        )
+        self.start_button = ttk.Button(
             master=self._frame,
             text="Aloita Peli",
             command=self._handle_start
         )
+        self.message = ttk.Label(
+            master=self._frame,
+            text = ""
+        )
 
         title.grid(row=0, column=0, pady=10)
         rules.grid(row=1, column=0, pady=10)
-        start_button.grid(row=2, column=0, pady=10)
+        username.grid(row=2, column=0, pady=10)
+        self.username_box.grid(row=3, column=0, pady=10)
+        username_save_button.grid(row=4, column=0, pady=10)
+        self.message.grid(row=5, column=0, pady=10)
         self._frame.grid_rowconfigure(0, weight=1)
         self._frame.grid_rowconfigure(1, weight=1)
         self._frame.grid_columnconfigure(0, weight=1)

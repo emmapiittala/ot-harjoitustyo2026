@@ -7,7 +7,7 @@ def main():
     """"Create main window"""
     window = Tk()
     window.title("Visailupeli")
-    window.geometry("800x400")
+    window.geometry("1000x600")
     ui = UI(window)
     ui.start()
 

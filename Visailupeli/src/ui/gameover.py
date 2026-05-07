@@ -65,7 +65,7 @@ class GameOver:
         score_all = ttk.Label(
             master = self._frame,
             text = "Kaikki pisteet: " + str(scores_all)
-        )
+        ) ## TEE TÄSTÄ VAIKKA TOP 5 pisteet, ruma nyt
         score.grid(row=1, column=0, columnspan=5, pady=10)
         score_all.grid(row=2, column=0, columnspan=5, pady=10)
         title.grid(row=0, column=0, columnspan=5, pady=10)
