@@ -1,13 +1,16 @@
 """Game logic"""
+import random
 class GameLogic:
     """Handle questions logic and aswers
         Attributes: 
         questions: List of questions
         current_question: Index of current question
+        random.suffle(slf.questions) randomize questions
         score = player score"""
     def __init__(self, questions):
         self.questions = questions
         self.current_question = 0
+        random.shuffle(self.questions)
         self.score = 0
 
     def get_question(self):

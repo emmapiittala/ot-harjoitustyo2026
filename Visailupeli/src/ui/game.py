@@ -138,6 +138,11 @@ class Game:
         )
         game_over.pack()
 
+    def back_main(self):
+        """Return to the main menu"""
+        self.destroy()
+        self.handle_quit()
+
     def initialize(self):
         """Create UI layout."""
         self.create_question()
@@ -149,7 +154,7 @@ class Game:
         quit_button = ttk.Button(
             master=self.frame,
             text="Palaa etusivulle",
-            command=self.handle_quit
+            command=self.back_main
         )
         self.title.grid(row=0,column=0,columnspan=5,pady=10,sticky="n")
         self.show_answers()

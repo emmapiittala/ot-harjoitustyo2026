@@ -8,7 +8,7 @@
 
     {"question": "Oli 00-luvun uusi ilmiö",
      "choices": ["matopeli","ihQdaa","multimediaviestit","skeittikengät muodin vuoksi",
-                 "polyfoniset soittiäänet","LOL","kännyköiden vaihtokuoret","sininen Pepsi","monofonisett soittoäänet","taitettava potkulauta"],
+                 "polyfoniset soitt0äänet","LOL","kännyköiden vaihtokuoret","sininen Pepsi","monofonisett soittoäänet","taitettava potkulauta"],
      "correct_answers" :["ihQdaa","multimediaviestit","skeittikengät muodin vuoksi",
                  "polyfoniset soittiäänet","LOL","sininen Pepsi","taitettava potkulauta"]
      },
