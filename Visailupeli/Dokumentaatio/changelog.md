@@ -42,7 +42,7 @@ peliruutuun mihin tule kysymykset
 - Yhdistetty winning ja gameover samaan jottei olisi niin paljon toistoa.
 - Siistitty koodia ja korjattu pylint virheitä.
   
-  **8.5.2026**
-  - Lisätty random.shuffle, jotta kysymykset näkyisivät randomissa järjestyksessä.
-  - Korjattu palaa etusivulle nappi. Kysymykset eivät jää enää taustalle jos käyttäjä haluaakin palata etusivulle kesken pelin.
+**8.5.2026**
+- Lisätty random.shuffle, jotta kysymykset näkyisivät randomissa järjestyksessä.
+- Korjattu palaa etusivulle nappi. Kysymykset eivät jää enää taustalle jos käyttäjä haluaakin palata etusivulle kesken pelin.
 
