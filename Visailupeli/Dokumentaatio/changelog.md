@@ -40,6 +40,9 @@ peliruutuun mihin tule kysymykset
 - Pelaaja pystyy antamaan itselleen käyttäjänimen.
 - Pelaaja voi nähdä top-5 pisteet
 - Yhdistetty winning ja gameover samaan jottei olisi niin paljon toistoa.
-- Siistitty koodia ja korjattu pylint virheitä. 
+- Siistitty koodia ja korjattu pylint virheitä.
   
-  
+  **8.5.2026**
+  - Lisätty random.shuffle, jotta kysymykset näkyisivät randomissa järjestyksessä.
+  - Korjattu palaa etusivulle nappi. Kysymykset eivät jää enää taustalle jos käyttäjä haluaakin palata etusivulle kesken pelin.
+
