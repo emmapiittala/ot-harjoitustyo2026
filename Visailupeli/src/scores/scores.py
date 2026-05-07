@@ -5,9 +5,12 @@ def get_scores():
         data = file.read()
     return json.loads(data)
 
-def save_scores(score):
+def save_scores(username, score):
     scores = get_scores()
-    scores.append(score)
+    scores.append({
+        "username": username,
+        "score": score
+    })
     
     with open("src/scores/scores.json", "w") as file:
         json.dump(scores, file)

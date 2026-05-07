@@ -2,11 +2,12 @@
 from tkinter import ttk
 
 class Menu:
-    """Show the main menu and game rules
+    """Show the main menu and game rules and username input
     Attributes:
     _root: Application window.
     _handle_start: Callbaxk to start the game.
-    _frame: Main frame for the view."""
+    _frame: Main frame for the view.
+    username: player username."""
     def __init__(self, root, handle_start):
         """Intialize the menu view."""
         self._root = root
@@ -24,6 +25,7 @@ class Menu:
         self._frame.destroy()
         
     def save_username(self):
+        """Save username and then show start button"""
         username = self.username_box.get()
         
         if not username.strip():
@@ -37,10 +39,13 @@ class Menu:
             text=f"Tervetuloa pelaamaan {username}!"
         )
         self.start_button.grid(row=6, column=0, pady=10)
-        
+    
+    def start_game(self):
+        """Start game when gets username"""
+        self._handle_start(self.username)
 
     def _initialize(self):
-        """Create UI and make labels, buttons and gamerules"""
+        """Create menu labels, buttons and gamerules"""
         self._frame = ttk.Frame(master=self._root)
 
         title = ttk.Label(
@@ -77,7 +82,7 @@ class Menu:
         self.start_button = ttk.Button(
             master=self._frame,
             text="Aloita Peli",
-            command=self._handle_start
+            command=self.start_game
         )
         self.message = ttk.Label(
             master=self._frame,

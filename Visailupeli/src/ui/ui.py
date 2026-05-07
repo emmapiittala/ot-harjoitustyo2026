@@ -26,12 +26,14 @@ class UI:
         )
         self._current_view.pack()
 
-    def _show_game(self):
+    def _show_game(self, username):
         """Show the game view """
         self._clear_view()
         self._current_view = Game(
             self._root,
-            self._show_menu)
+            self._show_menu,
+            username
+            )
         self._current_view.pack()
 
     def _clear_view(self):

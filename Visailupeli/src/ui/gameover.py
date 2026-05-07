@@ -33,14 +33,35 @@ class GameOver:
         """Close the current view and return to menu"""
         self.destroy()
         self._handle_quit()
-
+        
+    def scores(self):
+        """Show current score and top5 score"""
+        score = ttk.Label(
+            master = self._frame,
+            text = "Tämän kierroksen pisteet: " + str(self._score)
+        )
+        scores_all = get_scores()
+        top5_score = sorted(scores_all, key = lambda score: score ["score"], reverse=True)
+        top5_text = "Top 5 pisteet:\n"
+        
+        for user in top5_score[:5]:
+            top5_text += (user["username"] + ": " + str(user["score"]) + "\n")
+        
+        top_score_label = ttk.Label(
+            master = self._frame,
+            text = top5_text,
+            justify="center"
+        )
+        score.grid(row=1, column=0, columnspan=5, pady=10)
+        top_score_label.grid(row=2, column=0, columnspan=5, pady=10)
     def _initialize(self):
         """Create UI and make labels and buttons"""
         self._frame = ttk.Frame(master=self._root)
+        self.scores()
 
         title = ttk.Label(
             master=self._frame,
-            text="Hävisit pelin"
+            text="Voi ei! Hävisit pelin!"
         )
         rules = ttk.Label(
             master=self._frame,
@@ -53,21 +74,9 @@ class GameOver:
         )
         quit_button = ttk.Button(
             master=self._frame,
-            text="Palaa etusiivulle",
+            text="Palaa etusivulle",
             command=self.quit_game
         )
-        
-        score = ttk.Label(
-            master = self._frame,
-            text = "Tämän kierroksen pisteet: " + str(self._score)
-        )
-        scores_all = get_scores()
-        score_all = ttk.Label(
-            master = self._frame,
-            text = "Kaikki pisteet: " + str(scores_all)
-        ) ## TEE TÄSTÄ VAIKKA TOP 5 pisteet, ruma nyt
-        score.grid(row=1, column=0, columnspan=5, pady=10)
-        score_all.grid(row=2, column=0, columnspan=5, pady=10)
         title.grid(row=0, column=0, columnspan=5, pady=10)
         rules.grid(row=3, column=0, columnspan=5, pady=10)
         start_button.grid(row=4, column=0, columnspan=5, pady=10)

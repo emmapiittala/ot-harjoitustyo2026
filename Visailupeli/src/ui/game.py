@@ -14,9 +14,10 @@ class Game:
     title: Question tlabel widget.
     logic: Gamelogic handler.
     answer_vars: Variables for selected answers.
-    answers: Answers option widgets."""
-    def __init__(self, root, handle_quit):
-        """Intialize the game viiew"""
+    answers: Answers option widgets.
+    username: player username. """
+    def __init__(self, root, handle_quit, username):
+        """Intialize the game view"""
         self._root = root
         self._handle_quit = handle_quit
         self._frame = ttk.Frame(master=self._root)
@@ -24,6 +25,7 @@ class Game:
         self.logic = GameLogic(questions)
         self.answer_vars = []
         self.answers = []
+        self.username = username
         self._initialize()
         
 
@@ -91,13 +93,15 @@ class Game:
         self.destroy()
         game = Game(
             self._root,
-            self._handle_quit
+            self._handle_quit,
+            self.username
+            
         )
         game.pack()
 
     def show_quit(self):
-        """Show the game over view"""
-        save_scores(self.logic.score)
+        """Show the game over view and save score"""
+        save_scores(self.username, self.logic.score)
         self.destroy()
         game_over = GameOver(
             self._root,
