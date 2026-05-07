@@ -34,5 +34,12 @@ peliruutuun mihin tule kysymykset
 - Peliin lisätty pisteet mitä pystyy seuraamaan peliä pelatessa.
 - Gameoverissa näkyy kierroksen pisteet sekä kaikki aikaisempien pelien pisteet.
 - Pisteet tallennetaan JSON-tiedostoon.
+
+**7.5.2026**
+- Siirretty kysymykset JSON-tiedostoon.
+- Pelaaja pystyy antamaan itselleen käyttäjänimen.
+- Pelaaja voi nähdä top-5 pisteet
+- Yhdistetty winning ja gameover samaan jottei olisi niin paljon toistoa.
+- Siistitty koodia ja korjattu pylint virheitä. 
   
   
