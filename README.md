@@ -23,7 +23,10 @@ git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
  ```bash
   cd ot-harjoitustyo2026
   ```
-
+- Ja vielä:
+ ```bash
+  cd Visailupeli
+  ```
  - Asenna projektin riippuvuudet:
 ```bash
   poetry install
