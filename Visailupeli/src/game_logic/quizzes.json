@@ -1,32 +1,85 @@
 [
     {"question": "Oli 10 suosituimman etunimen joukossa vuosina 2000-2009",
      "choices": ["Liisi","Matilda","Ada","Juhani",
-                 "Jonne","Onni","Veeti","Aino","Sofia","Matias"],
+      "Jonne","Onni","Veeti","Aino","Sofia","Matias"],
      "correct_answers" :["Matilda","Juhani",
-                 "Onni","Aino","Sofia","Matias"]
+      "Onni","Aino","Sofia","Matias"]
      },
 
     {"question": "Oli 00-luvun uusi ilmiö",
      "choices": ["matopeli","ihQdaa","multimediaviestit","skeittikengät muodin vuoksi",
-                 "polyfoniset soitt0äänet","LOL","kännyköiden vaihtokuoret","sininen Pepsi","monofonisett soittoäänet","taitettava potkulauta"],
+      "polyfoniset soitt0äänet","LOL","kännyköiden vaihtokuoret","sininen Pepsi","monofonisett soittoäänet","taitettava potkulauta"],
      "correct_answers" :["ihQdaa","multimediaviestit","skeittikengät muodin vuoksi",
-                 "polyfoniset soittiäänet","LOL","sininen Pepsi","taitettava potkulauta"]
+      "polyfoniset soittiäänet","LOL","sininen Pepsi","taitettava potkulauta"]
      },
 
      {"question": "On NHL- joukkueessa vuosien 2000-09 aikana pelannut urheilija",
      "choices": ["Arto Blomsten","Saku Koivu","Mikko Koivu","Rasmus Rissanen",
-                 "Kimmo Timonen","Timo Jutila","Teppo Numminen","Jake Virtanen","Olli Jokinen","Aleksander Barkov"],
+      "Kimmo Timonen","Timo Jutila","Teppo Numminen","Jake Virtanen","Olli Jokinen","Aleksander Barkov"],
      "correct_answers" :["Saku Koivu","Mikko Koivu","Kimmo Timonen","Teppo Numminen","Olli Jokinen"]
      },
-        {"question": "On 00-luvun nu metal -yhtye",
+
+      {"question": "On 00-luvun nu metal -yhtye",
      "choices": ["Korn","Linkin Park","Soundgarden","Evanescence",
-                 "Deftones","System Of a Down","Soulfly","Fantomas","Papa Roach","Limp Bizkit"],
+      "Deftones","System Of a Down","Soulfly","Fantomas","Papa Roach","Limp Bizkit"],
      "correct_answers" :["Korn","Linkin Park","Evanescence","Deftones","System Of a Down",
      "Soulfly","Papa Roach","Limp Bizkit"]
      },
-        {"question": "On maa,jossa on ollut sota tai sisäinen konflikti 00-luvulla",
+
+      {"question": "On maa,jossa on ollut sota tai sisäinen konflikti 00-luvulla",
      "choices": ["Tsetsenia","Algeria","Ukraina","Libanon",
-                 "Ranska","Syyria","Norsunluurannikko","Ingusia","Somalia","Jemen"],
+      "Ranska","Syyria","Norsunluurannikko","Ingusia","Somalia","Jemen"],
      "correct_answers" :["Tsetsenia","Libanon","Syyria","Norsunluurannikko","Ingusia","Somalia"]
-         }
+      },
+
+      {"question": "On yksi Lumikin seitsemästä kääpiöstä",
+     "choices": ["Vilkas","Jörö","Nyrpeä","Unelias",
+      "Hilpeä","Ujo","Lystikäs","Kiltti","Viisas","Kaino"],
+     "correct_answers" :["Vilkas","Jörö","Unelias","Ujo","Lystikäs","Viisas"]
+       },
+
+      {"question": "On eliöiden luokitellun taso (taksonominen taso)",
+     "choices": ["heimo","pääjakso","floeemi","domeeni",
+      "suku","laji","biomi","kunta","luokka","lahko"],
+     "correct_answers" :["heimo","pääjakso","domeeni",
+      "suku","laji","kunta","luokka","lahko"]
+      },
+
+      {"question": "On yksi Orklan tuotemerkeistä",
+     "choices": ["Bliw","Jordan","Wasa","Kantolan",
+      "Panda","Abba","Risifrutti","Ekström","Arla","Grandiosa"],
+     "correct_answers" :["Bliw","Jordan","Kantolan",
+      "Panda","Abba","Risifrutti","Ekström","Grandiosa"]
+      },
+
+    {"question": "Kuuluu puuvillan 10 suurimman tuottajamaan joukkoon",
+     "choices": ["Espanja","Etiopia","Kanada","Venäjä",
+      "Intia","Uzbekiistan","Kiina","Yhdysvallat","Brasilia","Pakistan"],
+     "correct_answers" :["Intia","Uzbekiistan","Kiina","Yhdysvallat","Brasilia","Pakistan"]
+      },
+
+      {"question": "Oli tunnettu suomalainen ravihevonen",
+     "choices": ["Vieteri","Vekseli","Charme Asserdahl","Houston Laukko",
+      "Isla J Brave","Eri-Aaroni","Vonkaus","Puuskuttava Bill","Luuvalo","Eri-Hidaste"],
+     "correct_answers" :["Vieteri","Vekseli","Charme Asserdahl","Houston Laukko",
+      "Isla J Brave","Eri-Aaroni","Vonkaus"]
+      },
+
+      {"question": "On Stephen Kingin kirja",
+     "choices": ["Cujo","Manaaja","Carrie","Paha saapuu portin taa",
+      "Se","Lintuhäkki","Uhrilampaat","Piina","Amittyville Horror","Hohto"],
+     "correct_answers" :["Cujo","Carrie","Se","Piina","Hohto"]
+      },
+
+      {"question": "On oikean henkilön mukaan nimetty automerkki",
+     "choices": ["Ford","Volkswagen","Porsche","Fiat",
+      "Mazda","Ferrari","Hyundai","Buick","Volvo","Chevrolet"],
+     "correct_answers" :["Ford","Porsche","Ferrari","Buick","Chevrolet"]
+      },
+
+      {"question": "On kylä Suomessa",
+     "choices": ["Pöljä","Tappo","Pimeys","Tissi",
+      "Sorkka","Kökkö","Myrkky","Raamattu","Oranki","Varkaus"],
+     "correct_answers" :["Pöljä","Tappo","Sorkka","Myrkky","Raamattu","Oranki"]
+      }
     ]
