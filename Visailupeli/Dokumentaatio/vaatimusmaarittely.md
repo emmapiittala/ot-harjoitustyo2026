@@ -1,7 +1,7 @@
 # Vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
-- Smart10 - tyylinen yksin pelattava visailupeli, jossa käyttäjä saa kysymyksen ja 10 vastausta joissa osa on oikein ja osa väärin. Jos käyttäjä vastaa väärin, häviää hän pelin. Käyttäjä pystyy valitsemaan monta oikeaa vastausta ja täten pystyy keräämään enemmän pisteitä.
+- Smart10 - tyylinen yksin pelattava visailupeli, jossa käyttäjä saa kysymyksen ja 10 vastausta joista osa on oikein ja osa väärin. Jos käyttäjä vastaa väärin, häviää hän pelin. Käyttäjä pystyy valitsemaan monta oikeaa vastausta ja täten pistesaldo kasvaa enemmän.
 
 
 ## Käyttäjät
@@ -21,10 +21,13 @@ Sovelluksessa aukeaa etusivu jossa käyttäjä syöttää nimimerkin. Etusivulla
 Käyttäjän syötettyä nimimerkin ja painamalla tallenna tulee näkyviin "Aloita peli"- nappula josta pääsee pelaamaan. 
 
 ### Tallenna napin jälkeen
-Pelissä käyttäjä vastaa kysymyksiin ja kerää mahdollisimmann paljon pisteitä oikeista vasauksista, kerätyt pisteet näkyvät ajantasaisesti kysymyksen alla.
+Käyttäjä voi aloittaa pelin, jossa vastataan kysymyksiin ja kerää mahdollisimmann paljon pisteitä oikeista vasauksista. Kerätyt pisteet näkyvät ajantasaisesti kysymyksen alla.
 
 -Jos käyttäjä vastaa kaikkiin kysymyksiin oikein, voittaa hän ja päätyy win näkymään jossa käyttäjälle kerrotaan pisteet ja top5 pelaajat.
--Jos taas käyttäjä vastaa väärin, näytetään hänelle kerätyt pisteet ja top 5 tilastot. Kummastakin näkymästä käyttäjä voi aloittaa uuden pelin tai palata etusivulle.
+
+-Jos taas käyttäjä vastaa väärin, näytetään hänelle kerätyt pisteet ja top 5 tilastot. 
+
+Kummastakin näkymästä käyttäjä voi aloittaa uuden pelin tai palata etusivulle.
 
 ## Jatkokehitysideoita
 - Jatkossa voisi olla myös ylläpitäjä joka voisi keksiä uusia kategorioita/lisää kysymyksiä.
