@@ -56,7 +56,7 @@ class Menu:
         rules = ttk.Label(
             master=self._frame,
             text=("Säännöt:\n"
-            "- Tässä pelissä on tällä hetkellä 3 kysymystä.\n"
+            "- Keksi itsellesi nimimerkki.\n"
             "- Raksi ruudut mitkä koet oikeiksi vastauksiksi.\n"
             "- Kun olet valinnut halutut vastaukset paina tarkista.\n"
             "- Jos vastaus oli väärin, peli päättyy. Voit valita\n"

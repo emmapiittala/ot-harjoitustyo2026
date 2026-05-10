@@ -19,6 +19,7 @@ def save_scores(username, score):
         json.dump(scores, file)
 
 def get_top5_scores():
+    '''Return top 5 score'''
     scores = get_scores()
     return sorted(
         scores,
