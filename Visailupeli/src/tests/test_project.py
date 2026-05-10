@@ -8,36 +8,48 @@ from scores.scores import get_scores, save_scores, get_top5_scores
 class TestMenu(unittest.TestCase):
     """Tests for game logic."""
     def setUp(self):
-        """Test data
-        Attribute: 
-        question: questions test.add()
-        choices: list of possible answers
-        correct_answers: List of correct answers"""
-
         questions = [
-        {"question": "testikysymys 0",
-     "choices": ["1","2","3","4",
-                 "5","6","7","8","9","10"],
-     "correct_answers" :["1","2"]
-     },
-        {"question": "testikysymys 1",
-     "choices": ["a","b","c","d",
-                 "e","f","g","h","i","j"],
-     "correct_answers" :["a","b","c","d","e","f"]
-         }
-    ]
+        {"question":"Testi",
+        "choices":["1","2","3","4","5","6","7","8","9","10"],
+        "correct_answers":["1","2"]},
+        
+        {"question":"Testi2",
+        "choices":["a","b","c","d","e","f","g","h","i","j"],
+        "correct_answers":["a","b","c"]}]
+
         self.logic = GameLogic(questions)
 
     def test_check_answer_return_correct_answer(self):
         """Test corrent answer returns True."""
-        self.logic.current_question = 1
-        result = self.logic.check_answer(["a"])
+        self.logic.questions= [
+        {"question": "testikysymys 0",
+        "choices": ["1","2","3","4",
+        "5","6","7","8","9","10"],
+        "correct_answers" :["2"]}]
+        self.logic.current_question = 0
+        result = self.logic.check_answer(["2"])
+        self.assertTrue(result)
+    
+    def test_check_multiply_answer_is_correct(self):
+        """Test multiply answers return true"""
+        self.logic.questions = [
+        {"question": "Ohitataan shuffle tällä kysymyksellä",
+        "choices":["Joo", "Ei", "Kyllä"],
+        "correct_answers":["Joo","Kyllä"]
+        }]
+        self.logic.current_question = 0
+        result = self.logic.check_answer(["Joo","Kyllä"])
         self.assertTrue(result)
 
     def test_check_answer_is_not_correct(self):
         """Test wrong answer return False."""
+        self.logic.questions = [
+        {"question": "testikysymys 1",
+        "choices": ["a","b","c","d","e","f","g","h","i","j"],
+        "correct_answers" :["a"]
+         }]
         self.logic.current_question = 0
-        result = self.logic.check_answer(["6"])
+        result = self.logic.check_answer(["b"])
         self.assertFalse(result)
 
     def test_show_question(self):
