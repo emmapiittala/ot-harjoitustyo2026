@@ -17,3 +17,11 @@ def save_scores(username, score):
 
     with open("src/scores/scores.json", "w", encoding="utf=8") as file:
         json.dump(scores, file)
+
+def get_top5_scores():
+    scores = get_scores()
+    return sorted(
+        scores,
+        key = lambda score: score ["score"],
+        reverse=True)[:5]
+    
