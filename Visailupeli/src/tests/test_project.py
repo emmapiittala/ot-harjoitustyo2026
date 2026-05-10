@@ -1,4 +1,4 @@
-"""Test GameLogic class"""
+"""Test GameLogic class !Huom! docstring jätetty ettei pylint valita"""
 import unittest
 from game_logic.logic import GameLogic
 from game_logic.quizzes import get_questions
