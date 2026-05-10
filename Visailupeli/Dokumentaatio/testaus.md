@@ -2,7 +2,7 @@
 Ohjelmaa on testattu automatisoiduilla unittest-testeillä sekä manuaalisesti kokeilemalla
 sovelluksen toimintoja käyttöliittymän kautta.
 
-## Yksiikkö- ja integraatiotestaus
+## Yksikkö- ja integraatiotestaus
 
 # Sovelluslogiikka
 Sovelluslogiiikkaa testataan GameLogic-luokan testeillä. Testejä on mm. Vastausten tarkistus,
