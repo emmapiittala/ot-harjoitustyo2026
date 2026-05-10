@@ -46,3 +46,8 @@ peliruutuun mihin tule kysymykset
 - Lisätty random.shuffle, jotta kysymykset näkyisivät randomissa järjestyksessä.
 - Korjattu palaa etusivulle nappi. Kysymykset eivät jää enää taustalle jos käyttäjä haluaakin palata etusivulle kesken pelin.
 
+**10.5.2026**
+- Lisätty testejä
+- Tarkistettu että kaikki toimii
+- Lisätty kysymyksiä
+
