@@ -5,6 +5,7 @@
   * [Käyttöliittymäluonnos](Visailupeli/Dokumentaatio/kayttoliittymaluonnos.png)
   * [Arkkitehtuurikuvaus](Visailupeli/Dokumentaatio/arkkitehtuuri.md)
   * [Github release](https://github.com/emmapiittala/ot-harjoitustyo2026/releases/tag/Viikko5)
+  * [Käyttöohje](Visailupeli/Dokumentaatio/kayttoohje.md)
 ## **Ohjelmistotekniikka, harjoitustyö**
 Yksin pelattava visailupeli.
 
