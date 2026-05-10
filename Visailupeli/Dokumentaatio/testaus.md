@@ -26,7 +26,7 @@ Sovelluksen toiminnnallisuuksia on testattu pitkin projektia mm.
 - pistelaskuri toimii
 - napit toimii
 - oikean ja väärän kysymyksen tarkistus
-- 1 oikea vastaus 1 väärä vastaus -> johtaa pelin päättymseen
+- 1 oikea vastaus 1 väärä vastaus -> johtaa pelin päättymiseen
 - tyhjä vastaus päättää pelin
 - pisteiden tallenns ja top 5 - lista.
 
