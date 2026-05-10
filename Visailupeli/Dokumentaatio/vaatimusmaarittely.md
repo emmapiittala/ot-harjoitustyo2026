@@ -31,6 +31,7 @@ Kummastakin näkymästä käyttäjä voi aloittaa uuden pelin tai palata etusivu
 
 ## Jatkokehitysideoita
 - Jatkossa voisi olla myös ylläpitäjä joka voisi keksiä uusia kategorioita/lisää kysymyksiä.
+- Käyttäjä pystyisi kirjoittamaan vastauksen.
 - Moninpeli mahdollisuus.
 - Kirjautuminen sekä rekisteröityminen.
 - Käyttäjät voisivat luoda Kahoot! - tyylisesti omia kysymyksiä
