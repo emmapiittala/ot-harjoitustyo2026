@@ -1,8 +1,8 @@
 
 **Käyttöohje** 
-Lataa projektin viieisin releaseen Assets-oosion alta
+Lataa projektin viimeisimmän releasen lähdekoodi valitsemalla Assets-osion alta Source code.
 ## **Huom. Python-versiosta**
-Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kannssa saattaa ilmentyä ongelmia.
+Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kanssa saattaa ilmentyä ongelmia.
 
 ## **Miten sovellusta voi käyttää?**
 
@@ -13,6 +13,9 @@ git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
 - Kun olet saanut kloonattua siirry:
  ```bash
   cd ot-harjoitustyo2026
+  ```
+ ```bash
+  cd Visailupeli
   ```
 
  - Asenna projektin riippuvuudet:
@@ -26,9 +29,12 @@ git clone https://github.com/emmapiittala/ot-harjoitustyo2026.git
   ```
 **Pelaaminen**
 Sovellus käynnistyy ja pääset pelaamaan peliä
+
 Ensimmäisenä keksi itsellesi nimimerkki ja paina kohtaa Aloita peli.
+
 Eteesi ilmestyy kysymys ja siihen 10 vastausta.
 Valitse mielestäsi oikeat vastaukset ja paina 'Tarkista'
 Jos vastasit väärin/et valinnut mitään, hävisit pelin. Voit päättää haluatko aloittaa uuden pelin.
 Mikäli vastasit oikein, saat yhtämonta pistettä.
+
 Pääset jatkamaan seuraavaan kysymykseen painamalla 'Seuraava kysymys'
