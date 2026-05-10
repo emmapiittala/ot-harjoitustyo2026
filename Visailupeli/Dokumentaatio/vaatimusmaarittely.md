@@ -1,31 +1,35 @@
 # Vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
-- Smart10 - tyylinen yksin pelattava visailupeli, jossa käyttäjä saa kysymyksen ja 10 vastausta joissa osa on oikein ja osa väärin. Jos käyttäjä vastaa väärin, häviää hän pelin.
+- Smart10 - tyylinen yksin pelattava visailupeli, jossa käyttäjä saa kysymyksen ja 10 vastausta joissa osa on oikein ja osa väärin. Jos käyttäjä vastaa väärin, häviää hän pelin. Käyttäjä pystyy valitsemaan monta oikeaa vastausta ja täten pystyy keräämään enemmän pisteitä.
 
 
 ## Käyttäjät
-- Sovelluksessa on vain normaali-käyttäjä, joka pystyy vastata kysymyksiin ja kerätä pisteitä. 
+Sovelluksessa on vain normaali-käyttäjä, joka pystyy:
+- Syöttämään nimimerkin
+- pelata peliä
+- kerätä pisteitä
+- tarkistella top 5 tilastoja
+- aloittaa uuden pelin
 
 ## Käyttöliittymäluonnos
 ![Käyttöliittymäluonnos](kayttoliittymaluonnos.png)
 
-Sovelluksessa aukeaa kirjautumis näkymä -> kirjaudu sisään tai rekisteröidy -> jos rekisteröidyt -> palataan takaisin etusivulle josta pääsee kirjautumaan sisään -> siirrytään kohtaan missä kerrotaan miten peliä pelataan ja pelin aloitus nappiin -> kysymyksiä ja vastauksia niin kauan että käyttäjä joko lopettaa tai vastaa väärin -> peli loppui, käyttäjä näkee pisteensä ja sen jälkeen päättää siirtyykö uudestaan pelaamaan vai lopettaa pelin mikä siirtyy etusivulle missä pääsee kirjautumaan sisään.
+Sovelluksessa aukeaa etusivu jossa käyttäjä syöttää nimimerkin. Etusivulla lukee myös ohjeet miten peliä pelataan.
 
-### Ennen kirjautumista
-- Käyttäjä pystyy rekisteröitymään tai kirjautua sisään peliin. 
+### Nimimerkin syöttäminen
+Käyttäjän syötettyä nimimerkin ja painamalla tallenna tulee näkyviin "Aloita peli"- nappula josta pääsee pelaamaan. 
 
-### Kirjautumisen jälkeen
-- Käyttäjä pystyy lukea pelin ohjeet. **Tehty**
-- Käynnistää pelin. **Tehty** 
-- Pelata. **Puoliksi tehty,harjoituskysymykset**
-- Käyttäjä voi valita haluaako pelata uudestaan.**Tehty**
-- Käyttäjä pystyy kirjautua ulos.
-- Käyttäjä näkee pistetilastonsa. **Tehty**
+### Tallenna napin jälkeen
+Pelissä käyttäjä vastaa kysymyksiin ja kerää mahdollisimmann paljon pisteitä oikeista vasauksista, kerätyt pisteet näkyvät ajantasaisesti kysymyksen alla.
+
+-Jos käyttäjä vastaa kaikkiin kysymyksiin oikein, voittaa hän ja päätyy win näkymään jossa käyttäjälle kerrotaan pisteet ja top5 pelaajat.
+-Jos taas käyttäjä vastaa väärin, näytetään hänelle kerätyt pisteet ja top 5 tilastot. Kummastakin näkymästä käyttäjä voi aloittaa uuden pelin tai palata etusivulle.
 
 ## Jatkokehitysideoita
 - Jatkossa voisi olla myös ylläpitäjä joka voisi keksiä uusia kategorioita/lisää kysymyksiä.
 - Moninpeli mahdollisuus.
+- Kirjautuminen sekä rekisteröityminen.
 - Käyttäjät voisivat luoda Kahoot! - tyylisesti omia kysymyksiä
 - Timeri kauanko yhteen kysymykseen saisi vastata.
 - "Elämiä" - peli ei päättyisi ensimmäisestä väärästä vastauksesta, vaan esimerkiksi 3 elämää.
