@@ -12,7 +12,7 @@ class TestMenu(unittest.TestCase):
         {"question":"Testi",
         "choices":["1","2","3","4","5","6","7","8","9","10"],
         "correct_answers":["1","2"]},
-        
+
         {"question":"Testi2",
         "choices":["a","b","c","d","e","f","g","h","i","j"],
         "correct_answers":["a","b","c"]}]
@@ -29,7 +29,7 @@ class TestMenu(unittest.TestCase):
         self.logic.current_question = 0
         result = self.logic.check_answer(["2"])
         self.assertTrue(result)
-    
+
     def test_check_multiply_answer_is_correct(self):
         """Test multiply answers return true"""
         self.logic.questions = [
@@ -79,12 +79,12 @@ class TestMenu(unittest.TestCase):
         self.assertTrue(result)
 
     def test_get_scores(self):
-        """Tes get scores scooes.py"""
+        """Test get scores scooes.py"""
         result = get_scores()
         self.assertTrue(result)
 
     def test_save_scores(self):
-        """Tes save score and nick scores.py"""
+        """Test save score and nick scores.py"""
         save_scores("Emma", 5)
         scores = get_scores()
         self.assertTrue(scores)
