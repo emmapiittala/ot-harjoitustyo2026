@@ -1,6 +1,8 @@
 """Test GameLogic class"""
 import unittest
 from game_logic.logic import GameLogic
+from game_logic.quizzes import get_questions
+from scores.scores import get_scores, save_scores, get_top5_scores
 
 
 class TestMenu(unittest.TestCase):
@@ -13,32 +15,29 @@ class TestMenu(unittest.TestCase):
         correct_answers: List of correct answers"""
 
         questions = [
-        {"question": "Toimiiko kysymys?(Kyllä, joo ja oikein toimivat)",
-        "choices": ["Kyllä","Ei,","Ehkä,","joo",
-        "Voipi olla,","eitietenkään","väärä","oikein","mietitään","jeepuls"],
-        "correct_answers" :["Kyllä","joo","oikein"]
-        },
-        {"question": "Toimiiko kysymys 2? ja vaihtuuko vastaukset (oikeata k ja voipi oll)",
-     "choices": ["k","E,","Ehk,","juu",
-                 "Voipi oll","eitiete","vääräp","oikexin","mietitäänstten","jeepulsjee"],
-     "correct_answers" :["k","Voipi oll"]
-     },     {"question": "Toimiiko kysymys 3? (yksi vain oikein a)",
+        {"question": "testikysymys 0",
+     "choices": ["1","2","3","4",
+                 "5","6","7","8","9","10"],
+     "correct_answers" :["1","2"]
+     },
+        {"question": "testikysymys 1",
      "choices": ["a","b","c","d",
-                 "e,","f","g","h","i","j"],
-     "correct_answers" :["a"]
-     }
+                 "e","f","g","h","i","j"],
+     "correct_answers" :["a","b","c","d","e","f"]
+         }
     ]
         self.logic = GameLogic(questions)
 
-
     def test_check_answer_return_correct_answer(self):
         """Test corrent answer returns True."""
-        result = self.logic.check_answer(["Kyllä"])
+        self.logic.current_question = 1
+        result = self.logic.check_answer(["a"])
         self.assertTrue(result)
 
     def test_check_answer_is_not_correct(self):
         """Test wrong answer return False."""
-        result = self.logic.check_answer(["Ei"])
+        self.logic.current_question = 0
+        result = self.logic.check_answer(["6"])
         self.assertFalse(result)
 
     def test_show_question(self):
@@ -61,3 +60,27 @@ class TestMenu(unittest.TestCase):
         """Test no more questions."""
         self.logic.current_question = len(self.logic.questions) - 1
         self.assertFalse(self.logic.check_questions())
+
+    def test_get_quizzes(self):
+        """Test get question scores.py"""
+        result = get_questions()
+        self.assertTrue(result)
+
+    def test_get_scores(self):
+        """Tes get scores scooes.py"""
+        result = get_scores()
+        self.assertTrue(result)
+
+    def test_save_scores(self):
+        """Tes save score and nick scores.py"""
+        save_scores("Emma", 5)
+        scores = get_scores()
+        self.assertTrue(scores)
+
+    def test_top5_scores(self):
+        """Tes get top5 scores"""
+        save_scores("Emma", 5)
+        save_scores("Matti", 6)
+        save_scores("Maija", 9)
+        scores = get_top5_scores()
+        self.assertTrue(scores)

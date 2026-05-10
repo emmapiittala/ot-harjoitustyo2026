@@ -4,17 +4,17 @@ from tkinter import ttk
 class Menu:
     """Show the main menu and game rules and username input
     Attributes:
-    _root: Application window.
-    _handle_start: Callbaxk to start the game.
-    _frame: Main frame for the view.
+    root: Application window.
+    handle_start: Callbaxk to start the game.
+    frame: Main frame for the view.
     username: player username."""
     def __init__(self, root, handle_start):
         """Intialize the menu view."""
-        self._root = root
-        self._handle_start = handle_start
+        self.root = root
+        self.handle_start = handle_start
         self._frame = None
         self.username = ""
-        self._initialize()
+        self.initialize()
 
     def pack(self):
         """Display the view center"""
@@ -42,11 +42,11 @@ class Menu:
 
     def start_game(self):
         """Start game when gets username"""
-        self._handle_start(self.username)
+        self.handle_start(self.username)
 
-    def _initialize(self):
+    def initialize(self):
         """Create menu labels, buttons and gamerules"""
-        self._frame = ttk.Frame(master=self._root)
+        self._frame = ttk.Frame(master=self.root)
 
         title = ttk.Label(
             master=self._frame,
@@ -56,12 +56,11 @@ class Menu:
         rules = ttk.Label(
             master=self._frame,
             text=("Säännöt:\n"
-            "- Keksi itsellesi nimimerkki.\n"
-            "- Raksi ruudut mitkä koet oikeiksi vastauksiksi.\n"
-            "- Kun olet valinnut halutut vastaukset paina tarkista.\n"
-            "- Jos vastaus oli väärin, peli päättyy. Voit valita\n"
+            "- Sinulle esitetään kysymys ja siihen 10 vastausvaihtoehtoa.\n"
+            "- Raksi ruudut mitkä uskot oikeiksi.\n"
+            "- Kun olet valinnut halutut vastaukset paina 'tarkista.'\n"
+            "- Jos vastaus oli väärin tai et vastaa mitään, peli päättyy. Voit valita\n"
             " haluatko aloittaa uuden pelin vai mennä etusivulle.\n"
-            "- Painamalla tarkista- näppäintä ilman yhtään klikattua vastausta, häviät pelin.\n"
             "- Jos vastasit oikein, näkyviisi tulee nappi millä pääset seuraavaan kysymykseen.\n"
 
         ),

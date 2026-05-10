@@ -25,4 +25,3 @@ def get_top5_scores():
         scores,
         key = lambda score: score ["score"],
         reverse=True)[:5]
-    

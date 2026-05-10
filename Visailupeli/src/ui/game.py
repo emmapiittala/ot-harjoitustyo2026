@@ -173,4 +173,3 @@ class Game:
         self.frame.grid(row=0, column = 0)
         for column in range(5):
             self.frame.grid_columnconfigure(column, weight=1, minsize=150)
-            
