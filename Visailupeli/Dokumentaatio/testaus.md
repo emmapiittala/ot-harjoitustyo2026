@@ -30,6 +30,6 @@ Sovelluksen toiminnnallisuuksia on testattu pitkin projektia mm.
 - tyhjä vastaus päättää pelin
 - pisteiden tallenns ja top 5 - lista.
 
-  ## Sovellukseen jääneet laatuongelmat
-  - Ulkoasu on puutteellinen, tekstin asettelu voisi olla parempi.
+## Sovellukseen jääneet laatuongelmat
+- Ulkoasu on puutteellinen, tekstin asettelu voisi olla parempi.
 
