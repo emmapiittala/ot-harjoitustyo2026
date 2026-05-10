@@ -8,7 +8,7 @@
   * [Käyttöohje](Visailupeli/Dokumentaatio/kayttoohje.md)
   * [Testaus](Visailupeli/Dokumentaatio/testaus.md)
 ## **Ohjelmistotekniikka, harjoitustyö**
-Yksin pelattava visailupeli.
+Yksin pelattava visailupeli jossa käyttäjä saa kysymyksen ja sille 10 vastausvaihtoehtoa.
 
 ## **Huom. Python-versiosta**
 Sovellusta on testattu Python-versiolla 3.14.4. Vanhempien versioiden kannssa saattaa ilmentyä ongelmia.
