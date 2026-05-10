@@ -74,7 +74,7 @@ sequenceDiagram
   actor Käyttäjä
   participant UI
   participant GameLogic
-  participant scores
+  participant score
 
   Käyttäjä->>UI: Tarkista vastaus
   UI->>GameLogic: check_answer()
@@ -86,7 +86,7 @@ sequenceDiagram
     UI->>UI: show_next_question()
 else Vastaus väärin
 GameLogic-->> UI: False
-UI->>scores: save_scores()
+UI->>score: save_scores()
 UI->>Käyttäjä: show_gameover()
 score->>Käyttäjä: Näytä kierroksen sekä top5 pisteet
 end
